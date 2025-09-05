@@ -1,5 +1,5 @@
 [phases.setup]
-nixPkgs = ["python310", "pip"]
+nixPkgs = ["python310"]
 
 [phases.install]
 cmds = [
@@ -11,7 +11,7 @@ cmds = [
 cmds = ["echo 'Build phase complete'"]
 
 [start]
-cmd = "python app.py"
+cmd = "python start.py"
 
 [variables]
 PYTHONPATH = "/app"
