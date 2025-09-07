@@ -94,6 +94,15 @@ class LLMOrchestrator:
 • When user says "Internal Channel" → Use slack_internal_channel_id
 • When user says "External Channel" → Use slack_external_channel_id
 
+*THREAD CONTEXT AWARENESS - CRITICAL FOR CONVERSATION CONTINUITY:*
+• ALWAYS check the provided context for thread_context, conversation_history, and task_context
+• If context shows "action_needed": "time_tracking_for_existing_task", the user wants to add time to a task created earlier in the thread
+• If context has "active_client", use that client name instead of searching again
+• If context shows "last_successful_creation", reference the task that was just created
+• When user asks about "the task" or "it", they're referring to something mentioned earlier in the thread
+• Use conversation_history to understand what the user is referring to
+• NEVER ask for information that was already provided in the thread context
+
 *Executive-Level Capabilities:*
 • Provide strategic project status reports with insights
 • Analyze project health and identify risks/opportunities
@@ -106,11 +115,12 @@ class LLMOrchestrator:
 • Think like a business consultant - what does this data mean for the business?
 • Identify trends, risks, opportunities, and recommendations
 • Present information in executive summary format
-• FIRST: Try get_client_by_channel_id with the channel_id from context to find the client
+• FIRST: Check thread context for active client, then try get_client_by_channel_id with the channel_id from context
 • If channel lookup fails, then extract client names from user queries and use search_client_mappings
 • When asked about "what's happening" or "latest updates", use the get_tasks_updated_since tool
 • For task creation, always get the client mapping first to find the correct list_id
 • When users say "this client" or similar, use the channel_id to identify which client they mean
+• For time tracking requests, look for task IDs in the conversation history or recent task creation responses
 
 *MANDATORY SLACK FORMATTING - NO EXCEPTIONS:*
 ALL responses MUST use Slack formatting, NOT Markdown. Use ONLY these Slack syntax elements:

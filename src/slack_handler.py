@@ -236,34 +236,75 @@ class SlackBotHandler:
     
     async def _get_thread_context(self, channel_id: str, thread_ts: str) -> Dict[str, Any]:
         """
-        Get the conversation context from a thread.
+        Get the conversation context from a thread with enhanced memory.
         """
         try:
             # Get thread history
             thread_history = await self.client.conversations_replies(
                 channel=channel_id,
                 ts=thread_ts,
-                limit=20  # Last 20 messages for context
+                limit=30  # More messages for better context
             )
             
             messages = thread_history.get("messages", [])
             
-            # Extract conversation history (excluding bot messages for brevity)
+            # Extract detailed conversation history
             conversation_history = []
-            for msg in messages[-10:]:  # Last 10 messages for context
-                if not msg.get("bot_id"):
-                    user_text = msg.get("text", "")
+            task_context = {}
+            client_context = {}
+            
+            for msg in messages:
+                user_text = msg.get("text", "")
+                timestamp = msg.get("ts", "")
+                
+                if not msg.get("bot_id"):  # User message
                     if user_text:
                         conversation_history.append(f"User: {user_text}")
-                elif msg.get("bot_id"):
-                    bot_text = msg.get("text", "")
-                    if bot_text:
-                        conversation_history.append(f"Bot: {bot_text[:200]}...")  # Truncate bot responses
+                        
+                        # Extract task-related context
+                        if "task" in user_text.lower():
+                            if "create" in user_text.lower():
+                                task_context["last_task_creation"] = user_text
+                            if "assign" in user_text.lower():
+                                task_context["last_assignment"] = user_text
+                            if "time" in user_text.lower() or "hour" in user_text.lower():
+                                task_context["time_tracking_request"] = user_text
+                        
+                        # Extract client context
+                        if any(client in user_text.lower() for client in ["tesorai", "tesor", "client"]):
+                            client_context["mentioned_client"] = "TesorAI"
+                            client_context["client_context"] = user_text
+                
+                elif msg.get("bot_id"):  # Bot message
+                    if user_text:
+                        conversation_history.append(f"Bot: {user_text[:300]}...")  # More context from bot
+                        
+                        # Extract successful actions from bot responses
+                        if "successfully created" in user_text.lower():
+                            task_context["last_successful_creation"] = user_text
+                        if "task link" in user_text.lower() or "clickup" in user_text.lower():
+                            task_context["has_task_link"] = True
             
-            return {
+            # Build comprehensive context
+            context = {
                 "thread_context": True,
-                "conversation_history": "\n".join(conversation_history[-6:])  # Last 6 exchanges
+                "conversation_history": "\n".join(conversation_history[-8:]),  # Last 8 exchanges
+                "task_context": task_context,
+                "client_context": client_context,
+                "thread_ts": thread_ts,
+                "channel_id": channel_id
             }
+            
+            # Add specific context hints for the LLM
+            if task_context.get("last_successful_creation") and task_context.get("time_tracking_request"):
+                context["action_needed"] = "time_tracking_for_existing_task"
+                context["hint"] = "User is asking to add time tracking to a task that was just created in this thread"
+            
+            if client_context.get("mentioned_client"):
+                context["active_client"] = client_context["mentioned_client"]
+                context["hint"] = f"User is working with {client_context['mentioned_client']} in this conversation"
+            
+            return context
             
         except Exception as e:
             logger.error("Error getting thread context", channel_id=channel_id, thread_ts=thread_ts, error=str(e))
