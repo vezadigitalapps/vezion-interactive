@@ -25,6 +25,8 @@ from .clickup_tools import (
     get_task_details,
     get_list_details,
     get_tasks_with_time_spent,
+    create_time_entry,
+    get_task_time_tracking,
     clickup_tools
 )
 
@@ -48,5 +50,7 @@ __all__ = [
     "get_task_details",
     "get_list_details",
     "get_tasks_with_time_spent",
+    "create_time_entry",
+    "get_task_time_tracking",
     "clickup_tools",
 ]
