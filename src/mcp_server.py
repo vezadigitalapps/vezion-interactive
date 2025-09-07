@@ -30,6 +30,8 @@ from .tools import (
     get_task_details,
     get_list_details,
     get_tasks_with_time_spent,
+    create_time_entry,
+    get_task_time_tracking,
 )
 
 from .utils import get_logger, log_mcp_tool_call
@@ -237,6 +239,28 @@ class SlackBotMCPServer:
             logger.info("MCP tool called", **log_mcp_tool_call("get_all_employees", {}))
             return await get_all_employees()
         
+        async def create_time_entry_tool(task_id: str, duration_hours: float, description: str = "", assignee_id: Optional[int] = None, billable: bool = True) -> Dict[str, Any]:
+            """
+            Create a time entry for a specific task.
+            
+            This tool creates a time entry with the specified duration for a task.
+            Duration is in hours and will be converted to milliseconds for ClickUp.
+            Use this when users want to log actual time worked on a task.
+            """
+            logger.info("MCP tool called", **log_mcp_tool_call("create_time_entry", {"task_id": task_id, "duration_hours": duration_hours}))
+            return await create_time_entry(task_id, duration_hours, description, assignee_id, billable)
+        
+        async def get_task_time_tracking_tool(task_id: str) -> Dict[str, Any]:
+            """
+            Get time tracking information for a specific task.
+            
+            This tool retrieves comprehensive time tracking data including time spent,
+            time estimate, and progress for a task. Use this to answer questions about
+            how much time has been spent on a task or how much time is remaining.
+            """
+            logger.info("MCP tool called", **log_mcp_tool_call("get_task_time_tracking", {"task_id": task_id}))
+            return await get_task_time_tracking(task_id)
+        
         # Register all tools
         self.tools = [
             ToolDefinition("get_client_mapping", get_client_mapping_tool, get_client_mapping_tool.__doc__),
@@ -254,6 +278,8 @@ class SlackBotMCPServer:
             ToolDefinition("get_task_details", get_task_details_tool, get_task_details_tool.__doc__),
             ToolDefinition("get_list_details", get_list_details_tool, get_list_details_tool.__doc__),
             ToolDefinition("get_tasks_with_time_spent", get_tasks_with_time_spent_tool, get_tasks_with_time_spent_tool.__doc__),
+            ToolDefinition("create_time_entry", create_time_entry_tool, create_time_entry_tool.__doc__),
+            ToolDefinition("get_task_time_tracking", get_task_time_tracking_tool, get_task_time_tracking_tool.__doc__),
         ]
         
         logger.info("All MCP tools registered successfully", tool_count=len(self.tools))

@@ -225,30 +225,83 @@ class ClickUpTools:
     
     async def update_task(self, task_id: str, updates: Dict[str, Any]) -> Dict[str, Any]:
         """
-        Update an existing ClickUp task.
+        Update an existing ClickUp task with comprehensive field support.
         
-        This tool updates specific fields of a task.
+        This tool updates specific fields of a task including all supported ClickUp fields.
         """
         logger.info("Updating task", **log_function_call("update_task", task_id=task_id, updates=updates))
         
         try:
-            # Prepare update payload
+            # Prepare update payload with comprehensive field support
             payload = {}
             
+            # Basic fields
             if "name" in updates:
                 payload["name"] = updates["name"]
             if "description" in updates:
                 payload["description"] = updates["description"]
-            if "markdown_description" in updates:
-                payload["markdown_description"] = updates["markdown_description"]
+            if "markdown_content" in updates:
+                payload["markdown_content"] = updates["markdown_content"]
             if "status" in updates:
                 payload["status"] = updates["status"]
+            
+            # Priority handling (convert strings to numbers if needed)
             if "priority" in updates:
-                payload["priority"] = updates["priority"]
+                priority_value = updates["priority"]
+                if isinstance(priority_value, str):
+                    priority_map = {
+                        "urgent": 1,
+                        "high": 2, 
+                        "normal": 3,
+                        "low": 4
+                    }
+                    payload["priority"] = priority_map.get(priority_value.lower(), priority_value)
+                else:
+                    payload["priority"] = priority_value
+            
+            # Date fields
             if "due_date" in updates:
                 payload["due_date"] = updates["due_date"]
+            if "due_date_time" in updates:
+                payload["due_date_time"] = updates["due_date_time"]
+            if "start_date" in updates:
+                payload["start_date"] = updates["start_date"]
+            if "start_date_time" in updates:
+                payload["start_date_time"] = updates["start_date_time"]
+            
+            # Time estimate (in milliseconds)
+            if "time_estimate" in updates:
+                payload["time_estimate"] = updates["time_estimate"]
+            
+            # Task hierarchy
+            if "parent" in updates:
+                payload["parent"] = updates["parent"]
+            
+            # Sprint points
+            if "points" in updates:
+                payload["points"] = updates["points"]
+            
+            # People assignments
             if "assignees" in updates:
-                payload["assignees"] = {"add": updates["assignees"]}
+                if isinstance(updates["assignees"], dict):
+                    payload["assignees"] = updates["assignees"]
+                else:
+                    # If it's a list, assume we want to add these assignees
+                    payload["assignees"] = {"add": updates["assignees"]}
+            
+            if "group_assignees" in updates:
+                payload["group_assignees"] = updates["group_assignees"]
+            
+            if "watchers" in updates:
+                payload["watchers"] = updates["watchers"]
+            
+            # Archive status
+            if "archived" in updates:
+                payload["archived"] = updates["archived"]
+            
+            # Custom task type
+            if "custom_item_id" in updates:
+                payload["custom_item_id"] = updates["custom_item_id"]
             
             response = await self._make_request("PUT", f"/task/{task_id}", json=payload)
             
@@ -347,6 +400,94 @@ class ClickUpTools:
             logger.error("Error getting tasks with time spent", list_id=list_id, error=str(e))
             raise Exception(f"Failed to get tasks with time spent: {str(e)}")
     
+    async def create_time_entry(self, task_id: str, duration_hours: float, description: str = "", assignee_id: Optional[int] = None, billable: bool = True) -> Dict[str, Any]:
+        """
+        Create a time entry for a specific task.
+        
+        This tool creates a time entry with the specified duration for a task.
+        Duration is in hours and will be converted to milliseconds for ClickUp.
+        """
+        logger.info("Creating time entry", **log_function_call("create_time_entry", task_id=task_id, duration_hours=duration_hours))
+        
+        try:
+            # Convert hours to milliseconds
+            duration_ms = int(duration_hours * 60 * 60 * 1000)
+            
+            # Get current timestamp for start time
+            now = datetime.now()
+            start_time = int(now.timestamp() * 1000)
+            
+            # Prepare time entry payload
+            payload = {
+                "description": description,
+                "duration": duration_ms,
+                "start": start_time,
+                "billable": billable,
+                "tid": task_id
+            }
+            
+            # Add assignee if provided
+            if assignee_id:
+                payload["assignee"] = assignee_id
+            
+            response = await self._make_request("POST", f"/team/{self.team_id}/time_entries", json=payload)
+            
+            logger.info("Successfully created time entry", task_id=task_id, duration_hours=duration_hours, time_entry_id=response.get("id"))
+            return response
+            
+        except Exception as e:
+            logger.error("Error creating time entry", task_id=task_id, duration_hours=duration_hours, error=str(e))
+            raise Exception(f"Failed to create time entry for task {task_id}: {str(e)}")
+    
+    async def get_task_time_tracking(self, task_id: str) -> Dict[str, Any]:
+        """
+        Get time tracking information for a specific task.
+        
+        This tool retrieves comprehensive time tracking data including time spent,
+        time estimate, and time entries for a task.
+        """
+        logger.info("Getting task time tracking", **log_function_call("get_task_time_tracking", task_id=task_id))
+        
+        try:
+            # Get task details which includes time tracking info
+            task_details = await self.get_task_details(task_id)
+            
+            # Extract time tracking information
+            time_spent_ms = task_details.get("time_spent", 0)
+            time_estimate_ms = task_details.get("time_estimate", 0)
+            
+            # Convert to hours
+            time_spent_hours = time_spent_ms / (1000 * 60 * 60) if time_spent_ms else 0
+            time_estimate_hours = time_estimate_ms / (1000 * 60 * 60) if time_estimate_ms else 0
+            
+            result = {
+                "task_id": task_id,
+                "task_name": task_details.get("name"),
+                "time_spent": {
+                    "milliseconds": time_spent_ms,
+                    "hours": round(time_spent_hours, 2)
+                },
+                "time_estimate": {
+                    "milliseconds": time_estimate_ms,
+                    "hours": round(time_estimate_hours, 2)
+                },
+                "progress": {
+                    "percentage": round((time_spent_hours / time_estimate_hours * 100), 1) if time_estimate_hours > 0 else 0,
+                    "remaining_hours": round(max(0, time_estimate_hours - time_spent_hours), 2)
+                }
+            }
+            
+            logger.info("Successfully retrieved time tracking info", 
+                       task_id=task_id, 
+                       time_spent_hours=round(time_spent_hours, 2),
+                       time_estimate_hours=round(time_estimate_hours, 2))
+            
+            return result
+            
+        except Exception as e:
+            logger.error("Error getting task time tracking", task_id=task_id, error=str(e))
+            raise Exception(f"Failed to get time tracking for task {task_id}: {str(e)}")
+    
     async def close(self):
         """Close the HTTP client."""
         if self._client:
@@ -392,3 +533,13 @@ async def get_list_details(list_id: str) -> Dict[str, Any]:
 async def get_tasks_with_time_spent(list_id: str, **filters) -> Dict[str, Any]:
     """MCP tool: Get tasks with time spent from task details."""
     return await clickup_tools.get_tasks_with_time_spent(list_id, **filters)
+
+
+async def create_time_entry(task_id: str, duration_hours: float, description: str = "", assignee_id: Optional[int] = None, billable: bool = True) -> Dict[str, Any]:
+    """MCP tool: Create a time entry for a task."""
+    return await clickup_tools.create_time_entry(task_id, duration_hours, description, assignee_id, billable)
+
+
+async def get_task_time_tracking(task_id: str) -> Dict[str, Any]:
+    """MCP tool: Get time tracking information for a task."""
+    return await clickup_tools.get_task_time_tracking(task_id)
