@@ -34,7 +34,7 @@ class LLMOrchestrator:
         self.client = openai.AsyncOpenAI(api_key=config.openai_api_key)
         self.model = config.openai_model
         self.temperature = config.openai_temperature
-        self.max_iterations = 5  # Prevent infinite loops
+        self.max_iterations = 100  # Allow more iterations to complete complex tool chains
         
         # Base system prompt (date will be added dynamically)
         self.base_system_prompt = """You are the *Veza Digital AI Agent*, an intelligent assistant that helps C-level executives and leadership teams manage ClickUp projects and client information. Your role is to provide strategic insights, not just data.
@@ -233,6 +233,7 @@ Remember: You serve C-level executives who need strategic insights about their c
         Execute the conversation loop with tool calls until completion.
         """
         iteration = 0
+        last_successful_tools = []
         
         while iteration < self.max_iterations:
             iteration += 1
@@ -246,8 +247,16 @@ Remember: You serve C-level executives who need strategic insights about their c
                 # Execute tool calls and continue conversation
                 messages.append(response.choices[0].message.model_dump())
                 
+                current_iteration_tools = []
                 for tool_call in response.choices[0].message.tool_calls:
                     tool_result = await self._execute_tool_call(tool_call, mcp_server)
+                    
+                    # Track successful tool calls
+                    if not (isinstance(tool_result, dict) and tool_result.get("error")):
+                        current_iteration_tools.append({
+                            "name": tool_call.function.name,
+                            "result": tool_result
+                        })
                     
                     # Add tool result to conversation
                     messages.append({
@@ -255,6 +264,10 @@ Remember: You serve C-level executives who need strategic insights about their c
                         "tool_call_id": tool_call.id,
                         "content": json.dumps(tool_result) if isinstance(tool_result, (dict, list)) else str(tool_result)
                     })
+                
+                # Update successful tools list
+                if current_iteration_tools:
+                    last_successful_tools = current_iteration_tools
                 
                 # Continue the loop to get the final response
                 continue
@@ -266,8 +279,32 @@ Remember: You serve C-level executives who need strategic insights about their c
                 else:
                     return "I apologize, but I couldn't generate a proper response. Please try rephrasing your question."
         
-        # If we hit max iterations, return a fallback response
+        # If we hit max iterations, check if we had successful tool calls
         logger.warning("Hit maximum conversation iterations", max_iterations=self.max_iterations)
+        
+        # If we had successful tool calls in the last iteration, try to get a final response
+        if last_successful_tools:
+            logger.info("Attempting final response after successful tool calls", 
+                       successful_tools=[tool["name"] for tool in last_successful_tools])
+            
+            try:
+                # Add a system message to force a final response
+                final_messages = messages + [{
+                    "role": "system", 
+                    "content": "You have successfully completed the requested tool calls. Please provide a final response to the user based on the tool results. Do not make any more tool calls."
+                }]
+                
+                # Make one final call to get the response
+                final_response = await self._call_gpt4_with_tools(final_messages, [])  # No tools available
+                final_content = final_response.choices[0].message.content
+                
+                if final_content:
+                    logger.info("Successfully generated final response after max iterations")
+                    return final_content
+                    
+            except Exception as e:
+                logger.error("Failed to generate final response after successful tools", error=str(e))
+        
         return "I apologize, but I'm having trouble processing your request completely. Please try breaking it down into smaller questions."
     
     async def _call_gpt4_with_tools(
