@@ -103,7 +103,27 @@ class SlackBotMCPServer:
             logger.info("MCP tool called", **log_mcp_tool_call("update_client_mapping", {"client_name": client_name, "updates": updates}))
             return await update_client_mapping(client_name, updates)
         
-        async def create_client_mapping_tool(mapping_data: Dict[str, Any]) -> Dict[str, Any]:
+        async def create_client_mapping_tool(
+            client_name: str,
+            clickup_project_name: Optional[str] = None,
+            clickup_folder_name: Optional[str] = None,
+            clickup_folder_id: Optional[str] = None,
+            clickup_list_name: Optional[str] = None,
+            clickup_list_id: Optional[str] = None,
+            slack_internal_channel_name: Optional[str] = None,
+            slack_internal_channel_id: Optional[str] = None,
+            slack_external_channel_name: Optional[str] = None,
+            slack_external_channel_id: Optional[str] = None,
+            project_type: Optional[str] = None,
+            available_hours: Optional[int] = None,
+            revenue: Optional[float] = None,
+            average_delivery_hourly: Optional[float] = None,
+            status: Optional[str] = None,
+            qa_list_name: Optional[str] = None,
+            qa_list_id: Optional[str] = None,
+            alternatives: Optional[List[str]] = None,
+            notes: Optional[str] = None
+        ) -> Dict[str, Any]:
             """
             Create a new client mapping in Supabase.
             
@@ -111,6 +131,32 @@ class SlackBotMCPServer:
             Use when adding a new client to the system. Requires at minimum
             a client_name field.
             """
+            # Build mapping data dictionary from individual parameters
+            mapping_data = {
+                "client_name": client_name,
+                "clickup_project_name": clickup_project_name,
+                "clickup_folder_name": clickup_folder_name,
+                "clickup_folder_id": clickup_folder_id,
+                "clickup_list_name": clickup_list_name,
+                "clickup_list_id": clickup_list_id,
+                "slack_internal_channel_name": slack_internal_channel_name,
+                "slack_internal_channel_id": slack_internal_channel_id,
+                "slack_external_channel_name": slack_external_channel_name,
+                "slack_external_channel_id": slack_external_channel_id,
+                "project_type": project_type,
+                "available_hours": available_hours,
+                "revenue": revenue,
+                "average_delivery_hourly": average_delivery_hourly,
+                "status": status,
+                "qa_list_name": qa_list_name,
+                "qa_list_id": qa_list_id,
+                "alternatives": alternatives,
+                "notes": notes
+            }
+            
+            # Remove None values to avoid inserting nulls unnecessarily
+            mapping_data = {k: v for k, v in mapping_data.items() if v is not None}
+            
             logger.info("MCP tool called", **log_mcp_tool_call("create_client_mapping", {"mapping_data": mapping_data}))
             return await create_client_mapping(mapping_data)
         
