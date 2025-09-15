@@ -270,10 +270,11 @@ class SlackBotHandler:
                             if "time" in user_text.lower() or "hour" in user_text.lower():
                                 task_context["time_tracking_request"] = user_text
                         
-                        # Extract client context
-                        if any(client in user_text.lower() for client in ["tesorai", "tesor", "client"]):
-                            client_context["mentioned_client"] = "TesorAI"
+                        # Extract client context - let the LLM identify clients properly via channel_id
+                        # Don't hardcode any client names here
+                        if "client" in user_text.lower():
                             client_context["client_context"] = user_text
+                            # Let get_client_by_channel_id handle proper client identification
                 
                 elif msg.get("bot_id"):  # Bot message
                     if user_text:
