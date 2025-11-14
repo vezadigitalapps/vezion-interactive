@@ -30,6 +30,14 @@ from .clickup_tools import (
     clickup_tools
 )
 
+from .slack_message_tools import (
+    get_recent_messages_by_channel,
+    get_latest_client_message,
+    search_messages_by_text,
+    get_conversation_context,
+    slack_message_tools
+)
+
 __all__ = [
     # Supabase tools
     "get_client_mapping",
@@ -53,4 +61,11 @@ __all__ = [
     "create_time_entry",
     "get_task_time_tracking",
     "clickup_tools",
+    
+    # Slack message tools
+    "get_recent_messages_by_channel",
+    "get_latest_client_message",
+    "search_messages_by_text",
+    "get_conversation_context",
+    "slack_message_tools",
 ]

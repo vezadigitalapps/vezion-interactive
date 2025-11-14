@@ -183,7 +183,7 @@ class SlackBotHandler:
         # Handle errors
         @self.app.error
         async def global_error_handler(error, body):
-            logger.error("Global Slack error", error=str(error), body=body)
+            logger.error("Global Slack error", error_message=str(error), event_body=str(body)[:500])
             return "Sorry, something went wrong. Please try again."
         
         logger.info("All Slack event handlers registered")

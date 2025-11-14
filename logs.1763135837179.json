@@ -1,0 +1,1205 @@
+{
+        "message": "2025-11-14 02:43:18,766 - slack_bolt.AsyncApp - INFO - The old session (s_8764301777224) has been abandoned",
+        "attributes": {
+            "level": "info"
+        },
+        "tags": {
+            "project": "c268f033-cf77-430c-9986-444c33ebcea3",
+            "environment": "f324d1ba-fbfa-4f39-9141-fcf40c692df1",
+            "service": "d600fe65-95b6-47f3-9ea3-3d80d2fa6fca",
+            "deployment": "762089ec-404b-4d36-83b4-7af9849361e5",
+            "replica": "3840a53a-f7b0-4be0-94cc-a30df47ca973"
+        },
+        "timestamp": "2025-11-14T02:43:21.966325996Z"
+    },
+    {
+        "message": "2025-11-14 02:43:18,986 - slack_bolt.AsyncApp - INFO - A new session (s_8764301777086) has been established",
+        "attributes": {
+            "level": "info"
+        },
+        "tags": {
+            "project": "c268f033-cf77-430c-9986-444c33ebcea3",
+            "environment": "f324d1ba-fbfa-4f39-9141-fcf40c692df1",
+            "service": "d600fe65-95b6-47f3-9ea3-3d80d2fa6fca",
+            "deployment": "762089ec-404b-4d36-83b4-7af9849361e5",
+            "replica": "3840a53a-f7b0-4be0-94cc-a30df47ca973"
+        },
+        "timestamp": "2025-11-14T02:43:21.966339811Z"
+    },
+    {
+        "message": "2025-11-14 07:43:19,488 - slack_bolt.AsyncApp - INFO - The old session (s_8764301777086) has been abandoned",
+        "attributes": {
+            "level": "info"
+        },
+        "tags": {
+            "project": "c268f033-cf77-430c-9986-444c33ebcea3",
+            "environment": "f324d1ba-fbfa-4f39-9141-fcf40c692df1",
+            "service": "d600fe65-95b6-47f3-9ea3-3d80d2fa6fca",
+            "deployment": "762089ec-404b-4d36-83b4-7af9849361e5",
+            "replica": "3840a53a-f7b0-4be0-94cc-a30df47ca973"
+        },
+        "timestamp": "2025-11-14T07:43:22.007839863Z"
+    },
+    {
+        "message": "2025-11-14 07:43:19,712 - slack_bolt.AsyncApp - INFO - A new session (s_8764301777236) has been established",
+        "attributes": {
+            "level": "info"
+        },
+        "tags": {
+            "project": "c268f033-cf77-430c-9986-444c33ebcea3",
+            "environment": "f324d1ba-fbfa-4f39-9141-fcf40c692df1",
+            "service": "d600fe65-95b6-47f3-9ea3-3d80d2fa6fca",
+            "deployment": "762089ec-404b-4d36-83b4-7af9849361e5",
+            "replica": "3840a53a-f7b0-4be0-94cc-a30df47ca973"
+        },
+        "timestamp": "2025-11-14T07:43:22.007853718Z"
+    },
+    {
+        "message": "2025-11-14 12:43:26,776 - slack_bolt.AsyncApp - INFO - The old session (s_8764301777236) has been abandoned",
+        "attributes": {
+            "level": "info"
+        },
+        "tags": {
+            "project": "c268f033-cf77-430c-9986-444c33ebcea3",
+            "environment": "f324d1ba-fbfa-4f39-9141-fcf40c692df1",
+            "service": "d600fe65-95b6-47f3-9ea3-3d80d2fa6fca",
+            "deployment": "762089ec-404b-4d36-83b4-7af9849361e5",
+            "replica": "3840a53a-f7b0-4be0-94cc-a30df47ca973"
+        },
+        "timestamp": "2025-11-14T12:43:28.555131182Z"
+    },
+    {
+        "message": "2025-11-14 12:43:27,002 - slack_bolt.AsyncApp - INFO - A new session (s_8764301777116) has been established",
+        "attributes": {
+            "level": "info"
+        },
+        "tags": {
+            "project": "c268f033-cf77-430c-9986-444c33ebcea3",
+            "environment": "f324d1ba-fbfa-4f39-9141-fcf40c692df1",
+            "service": "d600fe65-95b6-47f3-9ea3-3d80d2fa6fca",
+            "deployment": "762089ec-404b-4d36-83b4-7af9849361e5",
+            "replica": "3840a53a-f7b0-4be0-94cc-a30df47ca973"
+        },
+        "timestamp": "2025-11-14T12:43:28.555142684Z"
+    },
+    {
+        "message": "2025-11-14 14:43:30,684 - slack_bolt.AsyncApp - INFO - The session (s_8764301777116) seems to be already closed. Reconnecting...",
+        "attributes": {
+            "level": "info"
+        },
+        "tags": {
+            "project": "c268f033-cf77-430c-9986-444c33ebcea3",
+            "environment": "f324d1ba-fbfa-4f39-9141-fcf40c692df1",
+            "service": "d600fe65-95b6-47f3-9ea3-3d80d2fa6fca",
+            "deployment": "762089ec-404b-4d36-83b4-7af9849361e5",
+            "replica": "3840a53a-f7b0-4be0-94cc-a30df47ca973"
+        },
+        "timestamp": "2025-11-14T14:43:36.716686095Z"
+    },
+    {
+        "message": "2025-11-14 14:43:30,835 - slack_bolt.AsyncApp - INFO - The old session (s_8764301777116) has been abandoned",
+        "attributes": {
+            "level": "info"
+        },
+        "tags": {
+            "project": "c268f033-cf77-430c-9986-444c33ebcea3",
+            "environment": "f324d1ba-fbfa-4f39-9141-fcf40c692df1",
+            "service": "d600fe65-95b6-47f3-9ea3-3d80d2fa6fca",
+            "deployment": "762089ec-404b-4d36-83b4-7af9849361e5",
+            "replica": "3840a53a-f7b0-4be0-94cc-a30df47ca973"
+        },
+        "timestamp": "2025-11-14T14:43:36.716704211Z"
+    },
+    {
+        "message": "2025-11-14 14:43:31,056 - slack_bolt.AsyncApp - INFO - A new session (s_8764301776921) has been established",
+        "attributes": {
+            "level": "info"
+        },
+        "tags": {
+            "project": "c268f033-cf77-430c-9986-444c33ebcea3",
+            "environment": "f324d1ba-fbfa-4f39-9141-fcf40c692df1",
+            "service": "d600fe65-95b6-47f3-9ea3-3d80d2fa6fca",
+            "deployment": "762089ec-404b-4d36-83b4-7af9849361e5",
+            "replica": "3840a53a-f7b0-4be0-94cc-a30df47ca973"
+        },
+        "timestamp": "2025-11-14T14:43:36.716711519Z"
+    },
+    {
+        "message": "2025-11-14 14:48:54,867 - src.slack_handler - INFO - [\u001b[32m\u001b[1minfo     \u001b[0m] \u001b[1mApp mention received          \u001b[0m \u001b[36mchannel_id\u001b[0m=\u001b[35mC080XN9K407\u001b[0m \u001b[36mslack_event\u001b[0m=\u001b[35mapp_mention\u001b[0m \u001b[36muser_id\u001b[0m=\u001b[35mU03EX6W085S\u001b[0m",
+        "attributes": {
+            "level": "info"
+        },
+        "tags": {
+            "project": "c268f033-cf77-430c-9986-444c33ebcea3",
+            "environment": "f324d1ba-fbfa-4f39-9141-fcf40c692df1",
+            "service": "d600fe65-95b6-47f3-9ea3-3d80d2fa6fca",
+            "deployment": "762089ec-404b-4d36-83b4-7af9849361e5",
+            "replica": "3840a53a-f7b0-4be0-94cc-a30df47ca973"
+        },
+        "timestamp": "2025-11-14T14:49:02.784968234Z"
+    },
+    {
+        "message": "2025-11-14 14:48:55,449 - src.llm_orchestrator - INFO - [\u001b[32m\u001b[1minfo     \u001b[0m] \u001b[1mProcessing user message       \u001b[0m \u001b[36mchannel_id\u001b[0m=\u001b[35mC080XN9K407\u001b[0m \u001b[36muser_id\u001b[0m=\u001b[35mU03EX6W085S\u001b[0m \u001b[36muser_message\u001b[0m=\u001b[35m'can you give me an update about this project?'\u001b[0m",
+        "attributes": {
+            "level": "info"
+        },
+        "tags": {
+            "project": "c268f033-cf77-430c-9986-444c33ebcea3",
+            "environment": "f324d1ba-fbfa-4f39-9141-fcf40c692df1",
+            "service": "d600fe65-95b6-47f3-9ea3-3d80d2fa6fca",
+            "deployment": "762089ec-404b-4d36-83b4-7af9849361e5",
+            "replica": "3840a53a-f7b0-4be0-94cc-a30df47ca973"
+        },
+        "timestamp": "2025-11-14T14:49:02.784975416Z"
+    },
+    {
+        "message": "2025-11-14 14:49:01,195 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions \"HTTP/1.1 200 OK\"",
+        "attributes": {
+            "level": "info"
+        },
+        "tags": {
+            "project": "c268f033-cf77-430c-9986-444c33ebcea3",
+            "environment": "f324d1ba-fbfa-4f39-9141-fcf40c692df1",
+            "service": "d600fe65-95b6-47f3-9ea3-3d80d2fa6fca",
+            "deployment": "762089ec-404b-4d36-83b4-7af9849361e5",
+            "replica": "3840a53a-f7b0-4be0-94cc-a30df47ca973"
+        },
+        "timestamp": "2025-11-14T14:49:02.784980063Z"
+    },
+    {
+        "message": "2025-11-14 14:49:01,237 - src.llm_orchestrator - INFO - [\u001b[32m\u001b[1minfo     \u001b[0m] \u001b[1mGPT-4 API call completed      \u001b[0m \u001b[36mcompletion_tokens\u001b[0m=\u001b[35m24\u001b[0m \u001b[36mllm_interaction\u001b[0m=\u001b[35mTrue\u001b[0m \u001b[36mmodel\u001b[0m=\u001b[35mgpt-4-1106-preview\u001b[0m \u001b[36mprompt_tokens\u001b[0m=\u001b[35m2704\u001b[0m",
+        "attributes": {
+            "level": "info"
+        },
+        "tags": {
+            "project": "c268f033-cf77-430c-9986-444c33ebcea3",
+            "environment": "f324d1ba-fbfa-4f39-9141-fcf40c692df1",
+            "service": "d600fe65-95b6-47f3-9ea3-3d80d2fa6fca",
+            "deployment": "762089ec-404b-4d36-83b4-7af9849361e5",
+            "replica": "3840a53a-f7b0-4be0-94cc-a30df47ca973"
+        },
+        "timestamp": "2025-11-14T14:49:02.784985013Z"
+    },
+    {
+        "message": "2025-11-14 14:49:01,237 - src.llm_orchestrator - INFO - [\u001b[32m\u001b[1minfo     \u001b[0m] \u001b[1mExecuting tool call           \u001b[0m \u001b[36marguments\u001b[0m=\u001b[35m{'channel_id': 'C080XN9K407'}\u001b[0m \u001b[36mtool_name\u001b[0m=\u001b[35mget_client_by_channel_id\u001b[0m",
+        "attributes": {
+            "level": "info"
+        },
+        "tags": {
+            "project": "c268f033-cf77-430c-9986-444c33ebcea3",
+            "environment": "f324d1ba-fbfa-4f39-9141-fcf40c692df1",
+            "service": "d600fe65-95b6-47f3-9ea3-3d80d2fa6fca",
+            "deployment": "762089ec-404b-4d36-83b4-7af9849361e5",
+            "replica": "3840a53a-f7b0-4be0-94cc-a30df47ca973"
+        },
+        "timestamp": "2025-11-14T14:49:02.784990456Z"
+    },
+    {
+        "message": "2025-11-14 14:49:01,238 - src.mcp_server - INFO - [\u001b[32m\u001b[1minfo     \u001b[0m] \u001b[1mMCP tool called               \u001b[0m \u001b[36marguments\u001b[0m=\u001b[35m{'channel_id': 'C080XN9K407'}\u001b[0m \u001b[36mmcp_tool\u001b[0m=\u001b[35mget_client_by_channel_id\u001b[0m \u001b[36mtype\u001b[0m=\u001b[35mtool_call\u001b[0m",
+        "attributes": {
+            "level": "info"
+        },
+        "tags": {
+            "project": "c268f033-cf77-430c-9986-444c33ebcea3",
+            "environment": "f324d1ba-fbfa-4f39-9141-fcf40c692df1",
+            "service": "d600fe65-95b6-47f3-9ea3-3d80d2fa6fca",
+            "deployment": "762089ec-404b-4d36-83b4-7af9849361e5",
+            "replica": "3840a53a-f7b0-4be0-94cc-a30df47ca973"
+        },
+        "timestamp": "2025-11-14T14:49:02.784996206Z"
+    },
+    {
+        "message": "2025-11-14 14:49:01,238 - src.tools.supabase_tools - INFO - [\u001b[32m\u001b[1minfo     \u001b[0m] \u001b[1mGetting client by channel ID  \u001b[0m \u001b[36mfunction\u001b[0m=\u001b[35mget_client_by_channel_id\u001b[0m \u001b[36mparameters\u001b[0m=\u001b[35m{'channel_id': 'C080XN9K407'}\u001b[0m",
+        "attributes": {
+            "level": "info"
+        },
+        "tags": {
+            "project": "c268f033-cf77-430c-9986-444c33ebcea3",
+            "environment": "f324d1ba-fbfa-4f39-9141-fcf40c692df1",
+            "service": "d600fe65-95b6-47f3-9ea3-3d80d2fa6fca",
+            "deployment": "762089ec-404b-4d36-83b4-7af9849361e5",
+            "replica": "3840a53a-f7b0-4be0-94cc-a30df47ca973"
+        },
+        "timestamp": "2025-11-14T14:49:02.785001153Z"
+    },
+    {
+        "message": "2025-11-14 14:49:02,099 - httpx - INFO - HTTP Request: GET https://naitzbqgkbufxmuoypaz.supabase.co/rest/v1/client_mappings?select=%2A&or=%28slack_internal_channel_id.eq.C080XN9K407%2Cslack_external_channel_id.eq.C080XN9K407%29 \"HTTP/2 200 OK\"",
+        "attributes": {
+            "level": "info"
+        },
+        "tags": {
+            "project": "c268f033-cf77-430c-9986-444c33ebcea3",
+            "environment": "f324d1ba-fbfa-4f39-9141-fcf40c692df1",
+            "service": "d600fe65-95b6-47f3-9ea3-3d80d2fa6fca",
+            "deployment": "762089ec-404b-4d36-83b4-7af9849361e5",
+            "replica": "3840a53a-f7b0-4be0-94cc-a30df47ca973"
+        },
+        "timestamp": "2025-11-14T14:49:02.785006442Z"
+    },
+    {
+        "message": "2025-11-14 14:49:02,111 - src.tools.supabase_tools - INFO - [\u001b[32m\u001b[1minfo     \u001b[0m] \u001b[1mSuccessfully found client by channel ID\u001b[0m \u001b[36mchannel_id\u001b[0m=\u001b[35mC080XN9K407\u001b[0m \u001b[36mclient_name\u001b[0m=\u001b[35mMonevate\u001b[0m",
+        "attributes": {
+            "level": "info"
+        },
+        "tags": {
+            "project": "c268f033-cf77-430c-9986-444c33ebcea3",
+            "environment": "f324d1ba-fbfa-4f39-9141-fcf40c692df1",
+            "service": "d600fe65-95b6-47f3-9ea3-3d80d2fa6fca",
+            "deployment": "762089ec-404b-4d36-83b4-7af9849361e5",
+            "replica": "3840a53a-f7b0-4be0-94cc-a30df47ca973"
+        },
+        "timestamp": "2025-11-14T14:49:03.850434222Z"
+    },
+    {
+        "message": "2025-11-14 14:49:04,114 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions \"HTTP/1.1 200 OK\"",
+        "attributes": {
+            "level": "info"
+        },
+        "tags": {
+            "project": "c268f033-cf77-430c-9986-444c33ebcea3",
+            "environment": "f324d1ba-fbfa-4f39-9141-fcf40c692df1",
+            "service": "d600fe65-95b6-47f3-9ea3-3d80d2fa6fca",
+            "deployment": "762089ec-404b-4d36-83b4-7af9849361e5",
+            "replica": "3840a53a-f7b0-4be0-94cc-a30df47ca973"
+        },
+        "timestamp": "2025-11-14T14:49:04.813028916Z"
+    },
+    {
+        "message": "2025-11-14 14:49:04,124 - src.llm_orchestrator - INFO - [\u001b[32m\u001b[1minfo     \u001b[0m] \u001b[1mGPT-4 API call completed      \u001b[0m \u001b[36mcompletion_tokens\u001b[0m=\u001b[35m26\u001b[0m \u001b[36mllm_interaction\u001b[0m=\u001b[35mTrue\u001b[0m \u001b[36mmodel\u001b[0m=\u001b[35mgpt-4-1106-preview\u001b[0m \u001b[36mprompt_tokens\u001b[0m=\u001b[35m3009\u001b[0m",
+        "attributes": {
+            "level": "info"
+        },
+        "tags": {
+            "project": "c268f033-cf77-430c-9986-444c33ebcea3",
+            "environment": "f324d1ba-fbfa-4f39-9141-fcf40c692df1",
+            "service": "d600fe65-95b6-47f3-9ea3-3d80d2fa6fca",
+            "deployment": "762089ec-404b-4d36-83b4-7af9849361e5",
+            "replica": "3840a53a-f7b0-4be0-94cc-a30df47ca973"
+        },
+        "timestamp": "2025-11-14T14:49:04.813036876Z"
+    },
+    {
+        "message": "2025-11-14 14:49:04,124 - src.llm_orchestrator - INFO - [\u001b[32m\u001b[1minfo     \u001b[0m] \u001b[1mExecuting tool call           \u001b[0m \u001b[36marguments\u001b[0m=\u001b[35m{'list_id': '901507610592', 'hours_ago': 168}\u001b[0m \u001b[36mtool_name\u001b[0m=\u001b[35mget_tasks_updated_since\u001b[0m",
+        "attributes": {
+            "level": "info"
+        },
+        "tags": {
+            "project": "c268f033-cf77-430c-9986-444c33ebcea3",
+            "environment": "f324d1ba-fbfa-4f39-9141-fcf40c692df1",
+            "service": "d600fe65-95b6-47f3-9ea3-3d80d2fa6fca",
+            "deployment": "762089ec-404b-4d36-83b4-7af9849361e5",
+            "replica": "3840a53a-f7b0-4be0-94cc-a30df47ca973"
+        },
+        "timestamp": "2025-11-14T14:49:04.813043830Z"
+    },
+    {
+        "message": "2025-11-14 14:49:04,124 - src.mcp_server - INFO - [\u001b[32m\u001b[1minfo     \u001b[0m] \u001b[1mMCP tool called               \u001b[0m \u001b[36marguments\u001b[0m=\u001b[35m{'list_id': '901507610592', 'hours_ago': 168}\u001b[0m \u001b[36mmcp_tool\u001b[0m=\u001b[35mget_tasks_updated_since\u001b[0m \u001b[36mtype\u001b[0m=\u001b[35mtool_call\u001b[0m",
+        "attributes": {
+            "level": "info"
+        },
+        "tags": {
+            "project": "c268f033-cf77-430c-9986-444c33ebcea3",
+            "environment": "f324d1ba-fbfa-4f39-9141-fcf40c692df1",
+            "service": "d600fe65-95b6-47f3-9ea3-3d80d2fa6fca",
+            "deployment": "762089ec-404b-4d36-83b4-7af9849361e5",
+            "replica": "3840a53a-f7b0-4be0-94cc-a30df47ca973"
+        },
+        "timestamp": "2025-11-14T14:49:04.813051409Z"
+    },
+    {
+        "message": "2025-11-14 14:49:04,124 - src.tools.clickup_tools - INFO - [\u001b[32m\u001b[1minfo     \u001b[0m] \u001b[1mGetting recently updated tasks\u001b[0m \u001b[36mfunction\u001b[0m=\u001b[35mget_tasks_updated_since\u001b[0m \u001b[36mparameters\u001b[0m=\u001b[35m{'list_id': '901507610592', 'hours_ago': 168}\u001b[0m",
+        "attributes": {
+            "level": "info"
+        },
+        "tags": {
+            "project": "c268f033-cf77-430c-9986-444c33ebcea3",
+            "environment": "f324d1ba-fbfa-4f39-9141-fcf40c692df1",
+            "service": "d600fe65-95b6-47f3-9ea3-3d80d2fa6fca",
+            "deployment": "762089ec-404b-4d36-83b4-7af9849361e5",
+            "replica": "3840a53a-f7b0-4be0-94cc-a30df47ca973"
+        },
+        "timestamp": "2025-11-14T14:49:04.813060200Z"
+    },
+    {
+        "message": "2025-11-14 14:49:04,125 - src.tools.clickup_tools - INFO - [\u001b[32m\u001b[1minfo     \u001b[0m] \u001b[1mGetting tasks by list ID      \u001b[0m \u001b[36mfunction\u001b[0m=\u001b[35mget_tasks_by_list_id\u001b[0m \u001b[36mparameters\u001b[0m=\u001b[35m{'list_id': '901507610592', 'filters': {'date_updated_gt': 1762526944125, 'include_closed': True, 'subtasks': True}}\u001b[0m",
+        "attributes": {
+            "level": "info"
+        },
+        "tags": {
+            "project": "c268f033-cf77-430c-9986-444c33ebcea3",
+            "environment": "f324d1ba-fbfa-4f39-9141-fcf40c692df1",
+            "service": "d600fe65-95b6-47f3-9ea3-3d80d2fa6fca",
+            "deployment": "762089ec-404b-4d36-83b4-7af9849361e5",
+            "replica": "3840a53a-f7b0-4be0-94cc-a30df47ca973"
+        },
+        "timestamp": "2025-11-14T14:49:04.813072743Z"
+    },
+    {
+        "message": "2025-11-14 14:49:04,721 - httpx - INFO - HTTP Request: GET https://api.clickup.com/api/v2/list/901507610592/task?include_closed=true&subtasks=true&date_updated_gt=1762526944125 \"HTTP/1.1 200 OK\"",
+        "attributes": {
+            "level": "info"
+        },
+        "tags": {
+            "project": "c268f033-cf77-430c-9986-444c33ebcea3",
+            "environment": "f324d1ba-fbfa-4f39-9141-fcf40c692df1",
+            "service": "d600fe65-95b6-47f3-9ea3-3d80d2fa6fca",
+            "deployment": "762089ec-404b-4d36-83b4-7af9849361e5",
+            "replica": "3840a53a-f7b0-4be0-94cc-a30df47ca973"
+        },
+        "timestamp": "2025-11-14T14:49:04.813081931Z"
+    },
+    {
+        "message": "2025-11-14 14:49:04,726 - src.tools.clickup_tools - INFO - [\u001b[32m\u001b[1minfo     \u001b[0m] \u001b[1mSuccessfully retrieved tasks  \u001b[0m \u001b[36mlist_id\u001b[0m=\u001b[35m901507610592\u001b[0m \u001b[36mtask_count\u001b[0m=\u001b[35m11\u001b[0m",
+        "attributes": {
+            "level": "info"
+        },
+        "tags": {
+            "project": "c268f033-cf77-430c-9986-444c33ebcea3",
+            "environment": "f324d1ba-fbfa-4f39-9141-fcf40c692df1",
+            "service": "d600fe65-95b6-47f3-9ea3-3d80d2fa6fca",
+            "deployment": "762089ec-404b-4d36-83b4-7af9849361e5",
+            "replica": "3840a53a-f7b0-4be0-94cc-a30df47ca973"
+        },
+        "timestamp": "2025-11-14T14:49:04.813088553Z"
+    },
+    {
+        "message": "2025-11-14 14:49:04,726 - src.tools.clickup_tools - INFO - [\u001b[32m\u001b[1minfo     \u001b[0m] \u001b[1mSuccessfully retrieved updated tasks\u001b[0m \u001b[36mhours_ago\u001b[0m=\u001b[35m168\u001b[0m \u001b[36mlist_id\u001b[0m=\u001b[35m901507610592\u001b[0m \u001b[36mtask_count\u001b[0m=\u001b[35m11\u001b[0m",
+        "attributes": {
+            "level": "info"
+        },
+        "tags": {
+            "project": "c268f033-cf77-430c-9986-444c33ebcea3",
+            "environment": "f324d1ba-fbfa-4f39-9141-fcf40c692df1",
+            "service": "d600fe65-95b6-47f3-9ea3-3d80d2fa6fca",
+            "deployment": "762089ec-404b-4d36-83b4-7af9849361e5",
+            "replica": "3840a53a-f7b0-4be0-94cc-a30df47ca973"
+        },
+        "timestamp": "2025-11-14T14:49:04.822638719Z"
+    },
+    {
+        "message": "2025-11-14 14:49:26,127 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions \"HTTP/1.1 200 OK\"",
+        "attributes": {
+            "level": "info"
+        },
+        "tags": {
+            "project": "c268f033-cf77-430c-9986-444c33ebcea3",
+            "environment": "f324d1ba-fbfa-4f39-9141-fcf40c692df1",
+            "service": "d600fe65-95b6-47f3-9ea3-3d80d2fa6fca",
+            "deployment": "762089ec-404b-4d36-83b4-7af9849361e5",
+            "replica": "3840a53a-f7b0-4be0-94cc-a30df47ca973"
+        },
+        "timestamp": "2025-11-14T14:49:34.970108968Z"
+    },
+    {
+        "message": "2025-11-14 14:49:26,133 - src.llm_orchestrator - INFO - [\u001b[32m\u001b[1minfo     \u001b[0m] \u001b[1mGPT-4 API call completed      \u001b[0m \u001b[36mcompletion_tokens\u001b[0m=\u001b[35m441\u001b[0m \u001b[36mllm_interaction\u001b[0m=\u001b[35mTrue\u001b[0m \u001b[36mmodel\u001b[0m=\u001b[35mgpt-4-1106-preview\u001b[0m \u001b[36mprompt_tokens\u001b[0m=\u001b[35m26214\u001b[0m",
+        "attributes": {
+            "level": "info"
+        },
+        "tags": {
+            "project": "c268f033-cf77-430c-9986-444c33ebcea3",
+            "environment": "f324d1ba-fbfa-4f39-9141-fcf40c692df1",
+            "service": "d600fe65-95b6-47f3-9ea3-3d80d2fa6fca",
+            "deployment": "762089ec-404b-4d36-83b4-7af9849361e5",
+            "replica": "3840a53a-f7b0-4be0-94cc-a30df47ca973"
+        },
+        "timestamp": "2025-11-14T14:49:34.970121951Z"
+    },
+    {
+        "message": "2025-11-14 14:49:26,134 - src.llm_orchestrator - INFO - [\u001b[32m\u001b[1minfo     \u001b[0m] \u001b[1mSuccessfully processed user message\u001b[0m \u001b[36mresponse_length\u001b[0m=\u001b[35m2095\u001b[0m \u001b[36muser_id\u001b[0m=\u001b[35mU03EX6W085S\u001b[0m",
+        "attributes": {
+            "level": "info"
+        },
+        "tags": {
+            "project": "c268f033-cf77-430c-9986-444c33ebcea3",
+            "environment": "f324d1ba-fbfa-4f39-9141-fcf40c692df1",
+            "service": "d600fe65-95b6-47f3-9ea3-3d80d2fa6fca",
+            "deployment": "762089ec-404b-4d36-83b4-7af9849361e5",
+            "replica": "3840a53a-f7b0-4be0-94cc-a30df47ca973"
+        },
+        "timestamp": "2025-11-14T14:49:34.970128872Z"
+    },
+    {
+        "message": "2025-11-14 14:49:58,235 - src.slack_handler - INFO - [\u001b[32m\u001b[1minfo     \u001b[0m] \u001b[1mThread message received       \u001b[0m \u001b[36mchannel_id\u001b[0m=\u001b[35mC080XN9K407\u001b[0m \u001b[36mslack_event\u001b[0m=\u001b[35mthread_message\u001b[0m \u001b[36muser_id\u001b[0m=\u001b[35mU03EX6W085S\u001b[0m",
+        "attributes": {
+            "level": "info"
+        },
+        "tags": {
+            "project": "c268f033-cf77-430c-9986-444c33ebcea3",
+            "environment": "f324d1ba-fbfa-4f39-9141-fcf40c692df1",
+            "service": "d600fe65-95b6-47f3-9ea3-3d80d2fa6fca",
+            "deployment": "762089ec-404b-4d36-83b4-7af9849361e5",
+            "replica": "3840a53a-f7b0-4be0-94cc-a30df47ca973"
+        },
+        "timestamp": "2025-11-14T14:50:04.861169765Z"
+    },
+    {
+        "message": "2025-11-14 14:49:58,821 - src.llm_orchestrator - INFO - [\u001b[32m\u001b[1minfo     \u001b[0m] \u001b[1mProcessing user message       \u001b[0m \u001b[36mchannel_id\u001b[0m=\u001b[35mC080XN9K407\u001b[0m \u001b[36muser_id\u001b[0m=\u001b[35mU03EX6W085S\u001b[0m \u001b[36muser_message\u001b[0m=\u001b[35m\"What is the last client's message?\"\u001b[0m",
+        "attributes": {
+            "level": "info"
+        },
+        "tags": {
+            "project": "c268f033-cf77-430c-9986-444c33ebcea3",
+            "environment": "f324d1ba-fbfa-4f39-9141-fcf40c692df1",
+            "service": "d600fe65-95b6-47f3-9ea3-3d80d2fa6fca",
+            "deployment": "762089ec-404b-4d36-83b4-7af9849361e5",
+            "replica": "3840a53a-f7b0-4be0-94cc-a30df47ca973"
+        },
+        "timestamp": "2025-11-14T14:50:04.861176545Z"
+    },
+    {
+        "message": "2025-11-14 14:50:00,358 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions \"HTTP/1.1 200 OK\"",
+        "attributes": {
+            "level": "info"
+        },
+        "tags": {
+            "project": "c268f033-cf77-430c-9986-444c33ebcea3",
+            "environment": "f324d1ba-fbfa-4f39-9141-fcf40c692df1",
+            "service": "d600fe65-95b6-47f3-9ea3-3d80d2fa6fca",
+            "deployment": "762089ec-404b-4d36-83b4-7af9849361e5",
+            "replica": "3840a53a-f7b0-4be0-94cc-a30df47ca973"
+        },
+        "timestamp": "2025-11-14T14:50:04.861184596Z"
+    },
+    {
+        "message": "2025-11-14 14:50:00,360 - src.llm_orchestrator - INFO - [\u001b[32m\u001b[1minfo     \u001b[0m] \u001b[1mGPT-4 API call completed      \u001b[0m \u001b[36mcompletion_tokens\u001b[0m=\u001b[35m24\u001b[0m \u001b[36mllm_interaction\u001b[0m=\u001b[35mTrue\u001b[0m \u001b[36mmodel\u001b[0m=\u001b[35mgpt-4-1106-preview\u001b[0m \u001b[36mprompt_tokens\u001b[0m=\u001b[35m2805\u001b[0m",
+        "attributes": {
+            "level": "info"
+        },
+        "tags": {
+            "project": "c268f033-cf77-430c-9986-444c33ebcea3",
+            "environment": "f324d1ba-fbfa-4f39-9141-fcf40c692df1",
+            "service": "d600fe65-95b6-47f3-9ea3-3d80d2fa6fca",
+            "deployment": "762089ec-404b-4d36-83b4-7af9849361e5",
+            "replica": "3840a53a-f7b0-4be0-94cc-a30df47ca973"
+        },
+        "timestamp": "2025-11-14T14:50:04.861191034Z"
+    },
+    {
+        "message": "2025-11-14 14:50:00,361 - src.llm_orchestrator - INFO - [\u001b[32m\u001b[1minfo     \u001b[0m] \u001b[1mExecuting tool call           \u001b[0m \u001b[36marguments\u001b[0m=\u001b[35m{'channel_id': 'C080XN9K407'}\u001b[0m \u001b[36mtool_name\u001b[0m=\u001b[35mget_client_by_channel_id\u001b[0m",
+        "attributes": {
+            "level": "info"
+        },
+        "tags": {
+            "project": "c268f033-cf77-430c-9986-444c33ebcea3",
+            "environment": "f324d1ba-fbfa-4f39-9141-fcf40c692df1",
+            "service": "d600fe65-95b6-47f3-9ea3-3d80d2fa6fca",
+            "deployment": "762089ec-404b-4d36-83b4-7af9849361e5",
+            "replica": "3840a53a-f7b0-4be0-94cc-a30df47ca973"
+        },
+        "timestamp": "2025-11-14T14:50:04.861197452Z"
+    },
+    {
+        "message": "2025-11-14 14:50:00,361 - src.mcp_server - INFO - [\u001b[32m\u001b[1minfo     \u001b[0m] \u001b[1mMCP tool called               \u001b[0m \u001b[36marguments\u001b[0m=\u001b[35m{'channel_id': 'C080XN9K407'}\u001b[0m \u001b[36mmcp_tool\u001b[0m=\u001b[35mget_client_by_channel_id\u001b[0m \u001b[36mtype\u001b[0m=\u001b[35mtool_call\u001b[0m",
+        "attributes": {
+            "level": "info"
+        },
+        "tags": {
+            "project": "c268f033-cf77-430c-9986-444c33ebcea3",
+            "environment": "f324d1ba-fbfa-4f39-9141-fcf40c692df1",
+            "service": "d600fe65-95b6-47f3-9ea3-3d80d2fa6fca",
+            "deployment": "762089ec-404b-4d36-83b4-7af9849361e5",
+            "replica": "3840a53a-f7b0-4be0-94cc-a30df47ca973"
+        },
+        "timestamp": "2025-11-14T14:50:04.861203431Z"
+    },
+    {
+        "message": "2025-11-14 14:50:00,361 - src.tools.supabase_tools - INFO - [\u001b[32m\u001b[1minfo     \u001b[0m] \u001b[1mGetting client by channel ID  \u001b[0m \u001b[36mfunction\u001b[0m=\u001b[35mget_client_by_channel_id\u001b[0m \u001b[36mparameters\u001b[0m=\u001b[35m{'channel_id': 'C080XN9K407'}\u001b[0m",
+        "attributes": {
+            "level": "info"
+        },
+        "tags": {
+            "project": "c268f033-cf77-430c-9986-444c33ebcea3",
+            "environment": "f324d1ba-fbfa-4f39-9141-fcf40c692df1",
+            "service": "d600fe65-95b6-47f3-9ea3-3d80d2fa6fca",
+            "deployment": "762089ec-404b-4d36-83b4-7af9849361e5",
+            "replica": "3840a53a-f7b0-4be0-94cc-a30df47ca973"
+        },
+        "timestamp": "2025-11-14T14:50:04.861213179Z"
+    },
+    {
+        "message": "2025-11-14 14:50:00,602 - httpx - INFO - HTTP Request: GET https://naitzbqgkbufxmuoypaz.supabase.co/rest/v1/client_mappings?select=%2A&or=%28slack_internal_channel_id.eq.C080XN9K407%2Cslack_external_channel_id.eq.C080XN9K407%29 \"HTTP/2 200 OK\"",
+        "attributes": {
+            "level": "info"
+        },
+        "tags": {
+            "project": "c268f033-cf77-430c-9986-444c33ebcea3",
+            "environment": "f324d1ba-fbfa-4f39-9141-fcf40c692df1",
+            "service": "d600fe65-95b6-47f3-9ea3-3d80d2fa6fca",
+            "deployment": "762089ec-404b-4d36-83b4-7af9849361e5",
+            "replica": "3840a53a-f7b0-4be0-94cc-a30df47ca973"
+        },
+        "timestamp": "2025-11-14T14:50:04.861220065Z"
+    },
+    {
+        "message": "2025-11-14 14:50:00,606 - src.tools.supabase_tools - INFO - [\u001b[32m\u001b[1minfo     \u001b[0m] \u001b[1mSuccessfully found client by channel ID\u001b[0m \u001b[36mchannel_id\u001b[0m=\u001b[35mC080XN9K407\u001b[0m \u001b[36mclient_name\u001b[0m=\u001b[35mMonevate\u001b[0m",
+        "attributes": {
+            "level": "info"
+        },
+        "tags": {
+            "project": "c268f033-cf77-430c-9986-444c33ebcea3",
+            "environment": "f324d1ba-fbfa-4f39-9141-fcf40c692df1",
+            "service": "d600fe65-95b6-47f3-9ea3-3d80d2fa6fca",
+            "deployment": "762089ec-404b-4d36-83b4-7af9849361e5",
+            "replica": "3840a53a-f7b0-4be0-94cc-a30df47ca973"
+        },
+        "timestamp": "2025-11-14T14:50:06.264669303Z"
+    },
+    {
+        "message": "2025-11-14 14:50:02,450 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions \"HTTP/1.1 200 OK\"",
+        "attributes": {
+            "level": "info"
+        },
+        "tags": {
+            "project": "c268f033-cf77-430c-9986-444c33ebcea3",
+            "environment": "f324d1ba-fbfa-4f39-9141-fcf40c692df1",
+            "service": "d600fe65-95b6-47f3-9ea3-3d80d2fa6fca",
+            "deployment": "762089ec-404b-4d36-83b4-7af9849361e5",
+            "replica": "3840a53a-f7b0-4be0-94cc-a30df47ca973"
+        },
+        "timestamp": "2025-11-14T14:50:06.264675187Z"
+    },
+    {
+        "message": "2025-11-14 14:50:02,458 - src.llm_orchestrator - INFO - [\u001b[32m\u001b[1minfo     \u001b[0m] \u001b[1mGPT-4 API call completed      \u001b[0m \u001b[36mcompletion_tokens\u001b[0m=\u001b[35m40\u001b[0m \u001b[36mllm_interaction\u001b[0m=\u001b[35mTrue\u001b[0m \u001b[36mmodel\u001b[0m=\u001b[35mgpt-4-1106-preview\u001b[0m \u001b[36mprompt_tokens\u001b[0m=\u001b[35m3110\u001b[0m",
+        "attributes": {
+            "level": "info"
+        },
+        "tags": {
+            "project": "c268f033-cf77-430c-9986-444c33ebcea3",
+            "environment": "f324d1ba-fbfa-4f39-9141-fcf40c692df1",
+            "service": "d600fe65-95b6-47f3-9ea3-3d80d2fa6fca",
+            "deployment": "762089ec-404b-4d36-83b4-7af9849361e5",
+            "replica": "3840a53a-f7b0-4be0-94cc-a30df47ca973"
+        },
+        "timestamp": "2025-11-14T14:50:06.264682261Z"
+    },
+    {
+        "message": "2025-11-14 14:50:02,458 - src.llm_orchestrator - INFO - [\u001b[32m\u001b[1minfo     \u001b[0m] \u001b[1mExecuting tool call           \u001b[0m \u001b[36marguments\u001b[0m=\u001b[35m{'list_id': '901507610592', 'include_closed': True, 'order_by': 'date_updated', 'reverse': True, 'page': 0}\u001b[0m \u001b[36mtool_name\u001b[0m=\u001b[35mget_tasks_by_list_id\u001b[0m",
+        "attributes": {
+            "level": "info"
+        },
+        "tags": {
+            "project": "c268f033-cf77-430c-9986-444c33ebcea3",
+            "environment": "f324d1ba-fbfa-4f39-9141-fcf40c692df1",
+            "service": "d600fe65-95b6-47f3-9ea3-3d80d2fa6fca",
+            "deployment": "762089ec-404b-4d36-83b4-7af9849361e5",
+            "replica": "3840a53a-f7b0-4be0-94cc-a30df47ca973"
+        },
+        "timestamp": "2025-11-14T14:50:06.264688836Z"
+    },
+    {
+        "message": "2025-11-14 14:50:02,459 - src.mcp_server - INFO - [\u001b[32m\u001b[1minfo     \u001b[0m] \u001b[1mMCP tool called               \u001b[0m \u001b[36marguments\u001b[0m=\u001b[35m{'list_id': '901507610592', 'filters': {'include_closed': True, 'page': 0, 'order_by': 'date_updated', 'reverse': True}}\u001b[0m \u001b[36mmcp_tool\u001b[0m=\u001b[35mget_tasks_by_list_id\u001b[0m \u001b[36mtype\u001b[0m=\u001b[35mtool_call\u001b[0m",
+        "attributes": {
+            "level": "info"
+        },
+        "tags": {
+            "project": "c268f033-cf77-430c-9986-444c33ebcea3",
+            "environment": "f324d1ba-fbfa-4f39-9141-fcf40c692df1",
+            "service": "d600fe65-95b6-47f3-9ea3-3d80d2fa6fca",
+            "deployment": "762089ec-404b-4d36-83b4-7af9849361e5",
+            "replica": "3840a53a-f7b0-4be0-94cc-a30df47ca973"
+        },
+        "timestamp": "2025-11-14T14:50:06.264696037Z"
+    },
+    {
+        "message": "2025-11-14 14:50:02,459 - src.tools.clickup_tools - INFO - [\u001b[32m\u001b[1minfo     \u001b[0m] \u001b[1mGetting tasks by list ID      \u001b[0m \u001b[36mfunction\u001b[0m=\u001b[35mget_tasks_by_list_id\u001b[0m \u001b[36mparameters\u001b[0m=\u001b[35m{'list_id': '901507610592', 'filters': {'include_closed': True, 'page': 0, 'order_by': 'date_updated', 'reverse': True}}\u001b[0m",
+        "attributes": {
+            "level": "info"
+        },
+        "tags": {
+            "project": "c268f033-cf77-430c-9986-444c33ebcea3",
+            "environment": "f324d1ba-fbfa-4f39-9141-fcf40c692df1",
+            "service": "d600fe65-95b6-47f3-9ea3-3d80d2fa6fca",
+            "deployment": "762089ec-404b-4d36-83b4-7af9849361e5",
+            "replica": "3840a53a-f7b0-4be0-94cc-a30df47ca973"
+        },
+        "timestamp": "2025-11-14T14:50:06.264702105Z"
+    },
+    {
+        "message": "2025-11-14 14:50:02,654 - httpx - INFO - HTTP Request: GET https://api.clickup.com/api/v2/list/901507610592/task?include_closed=true&order_by=date_updated&reverse=true \"HTTP/1.1 500 Internal Server Error\"",
+        "attributes": {
+            "level": "info"
+        },
+        "tags": {
+            "project": "c268f033-cf77-430c-9986-444c33ebcea3",
+            "environment": "f324d1ba-fbfa-4f39-9141-fcf40c692df1",
+            "service": "d600fe65-95b6-47f3-9ea3-3d80d2fa6fca",
+            "deployment": "762089ec-404b-4d36-83b4-7af9849361e5",
+            "replica": "3840a53a-f7b0-4be0-94cc-a30df47ca973"
+        },
+        "timestamp": "2025-11-14T14:50:06.264708109Z"
+    },
+    {
+        "message": "2025-11-14 14:50:02,656 - src.tools.clickup_tools - ERROR - [\u001b[31m\u001b[1merror    \u001b[0m] \u001b[1mClickUp API error             \u001b[0m \u001b[36mresponse\u001b[0m=\u001b[35m'{\"err\":\"Internal Server Error\",\"ECODE\":\"ITEMV2_003\"}'\u001b[0m \u001b[36mstatus_code\u001b[0m=\u001b[35m500\u001b[0m",
+        "attributes": {
+            "level": "info"
+        },
+        "tags": {
+            "project": "c268f033-cf77-430c-9986-444c33ebcea3",
+            "environment": "f324d1ba-fbfa-4f39-9141-fcf40c692df1",
+            "service": "d600fe65-95b6-47f3-9ea3-3d80d2fa6fca",
+            "deployment": "762089ec-404b-4d36-83b4-7af9849361e5",
+            "replica": "3840a53a-f7b0-4be0-94cc-a30df47ca973"
+        },
+        "timestamp": "2025-11-14T14:50:07.264206737Z"
+    },
+    {
+        "message": "2025-11-14 14:50:02,656 - src.tools.clickup_tools - ERROR - [\u001b[31m\u001b[1merror    \u001b[0m] \u001b[1mError retrieving tasks        \u001b[0m \u001b[36merror\u001b[0m=\u001b[35m'ClickUp API error 500: {\"err\":\"Internal Server Error\",\"ECODE\":\"ITEMV2_003\"}'\u001b[0m \u001b[36mlist_id\u001b[0m=\u001b[35m901507610592\u001b[0m",
+        "attributes": {
+            "level": "info"
+        },
+        "tags": {
+            "project": "c268f033-cf77-430c-9986-444c33ebcea3",
+            "environment": "f324d1ba-fbfa-4f39-9141-fcf40c692df1",
+            "service": "d600fe65-95b6-47f3-9ea3-3d80d2fa6fca",
+            "deployment": "762089ec-404b-4d36-83b4-7af9849361e5",
+            "replica": "3840a53a-f7b0-4be0-94cc-a30df47ca973"
+        },
+        "timestamp": "2025-11-14T14:50:07.264214832Z"
+    },
+    {
+        "message": "2025-11-14 14:50:02,656 - src.mcp_server - ERROR - [\u001b[31m\u001b[1merror    \u001b[0m] \u001b[1mMCP tool call failed          \u001b[0m \u001b[36merror\u001b[0m=\u001b[35m'Failed to retrieve tasks from list 901507610592: ClickUp API error 500: {\"err\":\"Internal Server Error\",\"ECODE\":\"ITEMV2_003\"}'\u001b[0m \u001b[36mtool_name\u001b[0m=\u001b[35mget_tasks_by_list_id\u001b[0m",
+        "attributes": {
+            "level": "info"
+        },
+        "tags": {
+            "project": "c268f033-cf77-430c-9986-444c33ebcea3",
+            "environment": "f324d1ba-fbfa-4f39-9141-fcf40c692df1",
+            "service": "d600fe65-95b6-47f3-9ea3-3d80d2fa6fca",
+            "deployment": "762089ec-404b-4d36-83b4-7af9849361e5",
+            "replica": "3840a53a-f7b0-4be0-94cc-a30df47ca973"
+        },
+        "timestamp": "2025-11-14T14:50:07.264222265Z"
+    },
+    {
+        "message": "2025-11-14 14:50:02,656 - src.llm_orchestrator - ERROR - [\u001b[31m\u001b[1merror    \u001b[0m] \u001b[1mTool call failed              \u001b[0m \u001b[36merror\u001b[0m=\u001b[35m'Tool call failed: Failed to retrieve tasks from list 901507610592: ClickUp API error 500: {\"err\":\"Internal Server Error\",\"ECODE\":\"ITEMV2_003\"}'\u001b[0m \u001b[36mtool_name\u001b[0m=\u001b[35mget_tasks_by_list_id\u001b[0m",
+        "attributes": {
+            "level": "info"
+        },
+        "tags": {
+            "project": "c268f033-cf77-430c-9986-444c33ebcea3",
+            "environment": "f324d1ba-fbfa-4f39-9141-fcf40c692df1",
+            "service": "d600fe65-95b6-47f3-9ea3-3d80d2fa6fca",
+            "deployment": "762089ec-404b-4d36-83b4-7af9849361e5",
+            "replica": "3840a53a-f7b0-4be0-94cc-a30df47ca973"
+        },
+        "timestamp": "2025-11-14T14:50:07.264231812Z"
+    },
+    {
+        "message": "2025-11-14 14:50:06,202 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions \"HTTP/1.1 200 OK\"",
+        "attributes": {
+            "level": "info"
+        },
+        "tags": {
+            "project": "c268f033-cf77-430c-9986-444c33ebcea3",
+            "environment": "f324d1ba-fbfa-4f39-9141-fcf40c692df1",
+            "service": "d600fe65-95b6-47f3-9ea3-3d80d2fa6fca",
+            "deployment": "762089ec-404b-4d36-83b4-7af9849361e5",
+            "replica": "3840a53a-f7b0-4be0-94cc-a30df47ca973"
+        },
+        "timestamp": "2025-11-14T14:50:07.264239162Z"
+    },
+    {
+        "message": "2025-11-14 14:50:06,206 - src.llm_orchestrator - INFO - [\u001b[32m\u001b[1minfo     \u001b[0m] \u001b[1mGPT-4 API call completed      \u001b[0m \u001b[36mcompletion_tokens\u001b[0m=\u001b[35m112\u001b[0m \u001b[36mllm_interaction\u001b[0m=\u001b[35mTrue\u001b[0m \u001b[36mmodel\u001b[0m=\u001b[35mgpt-4-1106-preview\u001b[0m \u001b[36mprompt_tokens\u001b[0m=\u001b[35m3211\u001b[0m",
+        "attributes": {
+            "level": "info"
+        },
+        "tags": {
+            "project": "c268f033-cf77-430c-9986-444c33ebcea3",
+            "environment": "f324d1ba-fbfa-4f39-9141-fcf40c692df1",
+            "service": "d600fe65-95b6-47f3-9ea3-3d80d2fa6fca",
+            "deployment": "762089ec-404b-4d36-83b4-7af9849361e5",
+            "replica": "3840a53a-f7b0-4be0-94cc-a30df47ca973"
+        },
+        "timestamp": "2025-11-14T14:50:07.264246269Z"
+    },
+    {
+        "message": "2025-11-14 14:50:06,206 - src.llm_orchestrator - INFO - [\u001b[32m\u001b[1minfo     \u001b[0m] \u001b[1mSuccessfully processed user message\u001b[0m \u001b[36mresponse_length\u001b[0m=\u001b[35m527\u001b[0m \u001b[36muser_id\u001b[0m=\u001b[35mU03EX6W085S\u001b[0m",
+        "attributes": {
+            "level": "info"
+        },
+        "tags": {
+            "project": "c268f033-cf77-430c-9986-444c33ebcea3",
+            "environment": "f324d1ba-fbfa-4f39-9141-fcf40c692df1",
+            "service": "d600fe65-95b6-47f3-9ea3-3d80d2fa6fca",
+            "deployment": "762089ec-404b-4d36-83b4-7af9849361e5",
+            "replica": "3840a53a-f7b0-4be0-94cc-a30df47ca973"
+        },
+        "timestamp": "2025-11-14T14:50:07.264255159Z"
+    },
+    {
+        "message": "2025-11-14 14:51:21,323 - src.slack_handler - INFO - [\u001b[32m\u001b[1minfo     \u001b[0m] \u001b[1mThread message received       \u001b[0m \u001b[36mchannel_id\u001b[0m=\u001b[35mC080XN9K407\u001b[0m \u001b[36mslack_event\u001b[0m=\u001b[35mthread_message\u001b[0m \u001b[36muser_id\u001b[0m=\u001b[35mU03EX6W085S\u001b[0m",
+        "attributes": {
+            "level": "info"
+        },
+        "tags": {
+            "project": "c268f033-cf77-430c-9986-444c33ebcea3",
+            "environment": "f324d1ba-fbfa-4f39-9141-fcf40c692df1",
+            "service": "d600fe65-95b6-47f3-9ea3-3d80d2fa6fca",
+            "deployment": "762089ec-404b-4d36-83b4-7af9849361e5",
+            "replica": "3840a53a-f7b0-4be0-94cc-a30df47ca973"
+        },
+        "timestamp": "2025-11-14T14:51:30.151654897Z"
+    },
+    {
+        "message": "2025-11-14 14:51:21,940 - src.llm_orchestrator - INFO - [\u001b[32m\u001b[1minfo     \u001b[0m] \u001b[1mProcessing user message       \u001b[0m \u001b[36mchannel_id\u001b[0m=\u001b[35mC080XN9K407\u001b[0m \u001b[36muser_id\u001b[0m=\u001b[35mU03EX6W085S\u001b[0m \u001b[36muser_message\u001b[0m=\u001b[35m'Can you write me an update for the client for this week'\u001b[0m",
+        "attributes": {
+            "level": "info"
+        },
+        "tags": {
+            "project": "c268f033-cf77-430c-9986-444c33ebcea3",
+            "environment": "f324d1ba-fbfa-4f39-9141-fcf40c692df1",
+            "service": "d600fe65-95b6-47f3-9ea3-3d80d2fa6fca",
+            "deployment": "762089ec-404b-4d36-83b4-7af9849361e5",
+            "replica": "3840a53a-f7b0-4be0-94cc-a30df47ca973"
+        },
+        "timestamp": "2025-11-14T14:51:30.151662970Z"
+    },
+    {
+        "message": "2025-11-14 14:51:23,661 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions \"HTTP/1.1 200 OK\"",
+        "attributes": {
+            "level": "info"
+        },
+        "tags": {
+            "project": "c268f033-cf77-430c-9986-444c33ebcea3",
+            "environment": "f324d1ba-fbfa-4f39-9141-fcf40c692df1",
+            "service": "d600fe65-95b6-47f3-9ea3-3d80d2fa6fca",
+            "deployment": "762089ec-404b-4d36-83b4-7af9849361e5",
+            "replica": "3840a53a-f7b0-4be0-94cc-a30df47ca973"
+        },
+        "timestamp": "2025-11-14T14:51:30.151670810Z"
+    },
+    {
+        "message": "2025-11-14 14:51:23,668 - src.llm_orchestrator - INFO - [\u001b[32m\u001b[1minfo     \u001b[0m] \u001b[1mGPT-4 API call completed      \u001b[0m \u001b[36mcompletion_tokens\u001b[0m=\u001b[35m24\u001b[0m \u001b[36mllm_interaction\u001b[0m=\u001b[35mTrue\u001b[0m \u001b[36mmodel\u001b[0m=\u001b[35mgpt-4-1106-preview\u001b[0m \u001b[36mprompt_tokens\u001b[0m=\u001b[35m2908\u001b[0m",
+        "attributes": {
+            "level": "info"
+        },
+        "tags": {
+            "project": "c268f033-cf77-430c-9986-444c33ebcea3",
+            "environment": "f324d1ba-fbfa-4f39-9141-fcf40c692df1",
+            "service": "d600fe65-95b6-47f3-9ea3-3d80d2fa6fca",
+            "deployment": "762089ec-404b-4d36-83b4-7af9849361e5",
+            "replica": "3840a53a-f7b0-4be0-94cc-a30df47ca973"
+        },
+        "timestamp": "2025-11-14T14:51:30.151680490Z"
+    },
+    {
+        "message": "2025-11-14 14:51:23,668 - src.llm_orchestrator - INFO - [\u001b[32m\u001b[1minfo     \u001b[0m] \u001b[1mExecuting tool call           \u001b[0m \u001b[36marguments\u001b[0m=\u001b[35m{'channel_id': 'C080XN9K407'}\u001b[0m \u001b[36mtool_name\u001b[0m=\u001b[35mget_client_by_channel_id\u001b[0m",
+        "attributes": {
+            "level": "info"
+        },
+        "tags": {
+            "project": "c268f033-cf77-430c-9986-444c33ebcea3",
+            "environment": "f324d1ba-fbfa-4f39-9141-fcf40c692df1",
+            "service": "d600fe65-95b6-47f3-9ea3-3d80d2fa6fca",
+            "deployment": "762089ec-404b-4d36-83b4-7af9849361e5",
+            "replica": "3840a53a-f7b0-4be0-94cc-a30df47ca973"
+        },
+        "timestamp": "2025-11-14T14:51:30.151688645Z"
+    },
+    {
+        "message": "2025-11-14 14:51:23,668 - src.mcp_server - INFO - [\u001b[32m\u001b[1minfo     \u001b[0m] \u001b[1mMCP tool called               \u001b[0m \u001b[36marguments\u001b[0m=\u001b[35m{'channel_id': 'C080XN9K407'}\u001b[0m \u001b[36mmcp_tool\u001b[0m=\u001b[35mget_client_by_channel_id\u001b[0m \u001b[36mtype\u001b[0m=\u001b[35mtool_call\u001b[0m",
+        "attributes": {
+            "level": "info"
+        },
+        "tags": {
+            "project": "c268f033-cf77-430c-9986-444c33ebcea3",
+            "environment": "f324d1ba-fbfa-4f39-9141-fcf40c692df1",
+            "service": "d600fe65-95b6-47f3-9ea3-3d80d2fa6fca",
+            "deployment": "762089ec-404b-4d36-83b4-7af9849361e5",
+            "replica": "3840a53a-f7b0-4be0-94cc-a30df47ca973"
+        },
+        "timestamp": "2025-11-14T14:51:30.151702073Z"
+    },
+    {
+        "message": "2025-11-14 14:51:23,668 - src.tools.supabase_tools - INFO - [\u001b[32m\u001b[1minfo     \u001b[0m] \u001b[1mGetting client by channel ID  \u001b[0m \u001b[36mfunction\u001b[0m=\u001b[35mget_client_by_channel_id\u001b[0m \u001b[36mparameters\u001b[0m=\u001b[35m{'channel_id': 'C080XN9K407'}\u001b[0m",
+        "attributes": {
+            "level": "info"
+        },
+        "tags": {
+            "project": "c268f033-cf77-430c-9986-444c33ebcea3",
+            "environment": "f324d1ba-fbfa-4f39-9141-fcf40c692df1",
+            "service": "d600fe65-95b6-47f3-9ea3-3d80d2fa6fca",
+            "deployment": "762089ec-404b-4d36-83b4-7af9849361e5",
+            "replica": "3840a53a-f7b0-4be0-94cc-a30df47ca973"
+        },
+        "timestamp": "2025-11-14T14:51:30.151711915Z"
+    },
+    {
+        "message": "2025-11-14 14:51:24,061 - httpx - INFO - HTTP Request: GET https://naitzbqgkbufxmuoypaz.supabase.co/rest/v1/client_mappings?select=%2A&or=%28slack_internal_channel_id.eq.C080XN9K407%2Cslack_external_channel_id.eq.C080XN9K407%29 \"HTTP/2 200 OK\"",
+        "attributes": {
+            "level": "info"
+        },
+        "tags": {
+            "project": "c268f033-cf77-430c-9986-444c33ebcea3",
+            "environment": "f324d1ba-fbfa-4f39-9141-fcf40c692df1",
+            "service": "d600fe65-95b6-47f3-9ea3-3d80d2fa6fca",
+            "deployment": "762089ec-404b-4d36-83b4-7af9849361e5",
+            "replica": "3840a53a-f7b0-4be0-94cc-a30df47ca973"
+        },
+        "timestamp": "2025-11-14T14:51:30.151719242Z"
+    },
+    {
+        "message": "2025-11-14 14:51:26,619 - httpx - INFO - HTTP Request: GET https://api.clickup.com/api/v2/list/901507610592/task?include_closed=true&subtasks=true&date_updated_gt=1762527086033 \"HTTP/1.1 200 OK\"",
+        "attributes": {
+            "level": "info"
+        },
+        "tags": {
+            "project": "c268f033-cf77-430c-9986-444c33ebcea3",
+            "environment": "f324d1ba-fbfa-4f39-9141-fcf40c692df1",
+            "service": "d600fe65-95b6-47f3-9ea3-3d80d2fa6fca",
+            "deployment": "762089ec-404b-4d36-83b4-7af9849361e5",
+            "replica": "3840a53a-f7b0-4be0-94cc-a30df47ca973"
+        },
+        "timestamp": "2025-11-14T14:51:31.393398715Z"
+    },
+    {
+        "message": "2025-11-14 14:51:24,064 - src.tools.supabase_tools - INFO - [\u001b[32m\u001b[1minfo     \u001b[0m] \u001b[1mSuccessfully found client by channel ID\u001b[0m \u001b[36mchannel_id\u001b[0m=\u001b[35mC080XN9K407\u001b[0m \u001b[36mclient_name\u001b[0m=\u001b[35mMonevate\u001b[0m",
+        "attributes": {
+            "level": "info"
+        },
+        "tags": {
+            "project": "c268f033-cf77-430c-9986-444c33ebcea3",
+            "environment": "f324d1ba-fbfa-4f39-9141-fcf40c692df1",
+            "service": "d600fe65-95b6-47f3-9ea3-3d80d2fa6fca",
+            "deployment": "762089ec-404b-4d36-83b4-7af9849361e5",
+            "replica": "3840a53a-f7b0-4be0-94cc-a30df47ca973"
+        },
+        "timestamp": "2025-11-14T14:51:31.393423576Z"
+    },
+    {
+        "message": "2025-11-14 14:51:26,031 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions \"HTTP/1.1 200 OK\"",
+        "attributes": {
+            "level": "info"
+        },
+        "tags": {
+            "project": "c268f033-cf77-430c-9986-444c33ebcea3",
+            "environment": "f324d1ba-fbfa-4f39-9141-fcf40c692df1",
+            "service": "d600fe65-95b6-47f3-9ea3-3d80d2fa6fca",
+            "deployment": "762089ec-404b-4d36-83b4-7af9849361e5",
+            "replica": "3840a53a-f7b0-4be0-94cc-a30df47ca973"
+        },
+        "timestamp": "2025-11-14T14:51:31.393431125Z"
+    },
+    {
+        "message": "2025-11-14 14:51:26,033 - src.llm_orchestrator - INFO - [\u001b[32m\u001b[1minfo     \u001b[0m] \u001b[1mGPT-4 API call completed      \u001b[0m \u001b[36mcompletion_tokens\u001b[0m=\u001b[35m26\u001b[0m \u001b[36mllm_interaction\u001b[0m=\u001b[35mTrue\u001b[0m \u001b[36mmodel\u001b[0m=\u001b[35mgpt-4-1106-preview\u001b[0m \u001b[36mprompt_tokens\u001b[0m=\u001b[35m3213\u001b[0m",
+        "attributes": {
+            "level": "info"
+        },
+        "tags": {
+            "project": "c268f033-cf77-430c-9986-444c33ebcea3",
+            "environment": "f324d1ba-fbfa-4f39-9141-fcf40c692df1",
+            "service": "d600fe65-95b6-47f3-9ea3-3d80d2fa6fca",
+            "deployment": "762089ec-404b-4d36-83b4-7af9849361e5",
+            "replica": "3840a53a-f7b0-4be0-94cc-a30df47ca973"
+        },
+        "timestamp": "2025-11-14T14:51:31.393438963Z"
+    },
+    {
+        "message": "2025-11-14 14:51:26,033 - src.llm_orchestrator - INFO - [\u001b[32m\u001b[1minfo     \u001b[0m] \u001b[1mExecuting tool call           \u001b[0m \u001b[36marguments\u001b[0m=\u001b[35m{'list_id': '901507610592', 'hours_ago': 168}\u001b[0m \u001b[36mtool_name\u001b[0m=\u001b[35mget_tasks_updated_since\u001b[0m",
+        "attributes": {
+            "level": "info"
+        },
+        "tags": {
+            "project": "c268f033-cf77-430c-9986-444c33ebcea3",
+            "environment": "f324d1ba-fbfa-4f39-9141-fcf40c692df1",
+            "service": "d600fe65-95b6-47f3-9ea3-3d80d2fa6fca",
+            "deployment": "762089ec-404b-4d36-83b4-7af9849361e5",
+            "replica": "3840a53a-f7b0-4be0-94cc-a30df47ca973"
+        },
+        "timestamp": "2025-11-14T14:51:31.393445284Z"
+    },
+    {
+        "message": "2025-11-14 14:51:26,033 - src.mcp_server - INFO - [\u001b[32m\u001b[1minfo     \u001b[0m] \u001b[1mMCP tool called               \u001b[0m \u001b[36marguments\u001b[0m=\u001b[35m{'list_id': '901507610592', 'hours_ago': 168}\u001b[0m \u001b[36mmcp_tool\u001b[0m=\u001b[35mget_tasks_updated_since\u001b[0m \u001b[36mtype\u001b[0m=\u001b[35mtool_call\u001b[0m",
+        "attributes": {
+            "level": "info"
+        },
+        "tags": {
+            "project": "c268f033-cf77-430c-9986-444c33ebcea3",
+            "environment": "f324d1ba-fbfa-4f39-9141-fcf40c692df1",
+            "service": "d600fe65-95b6-47f3-9ea3-3d80d2fa6fca",
+            "deployment": "762089ec-404b-4d36-83b4-7af9849361e5",
+            "replica": "3840a53a-f7b0-4be0-94cc-a30df47ca973"
+        },
+        "timestamp": "2025-11-14T14:51:31.393453091Z"
+    },
+    {
+        "message": "2025-11-14 14:51:26,033 - src.tools.clickup_tools - INFO - [\u001b[32m\u001b[1minfo     \u001b[0m] \u001b[1mGetting recently updated tasks\u001b[0m \u001b[36mfunction\u001b[0m=\u001b[35mget_tasks_updated_since\u001b[0m \u001b[36mparameters\u001b[0m=\u001b[35m{'list_id': '901507610592', 'hours_ago': 168}\u001b[0m",
+        "attributes": {
+            "level": "info"
+        },
+        "tags": {
+            "project": "c268f033-cf77-430c-9986-444c33ebcea3",
+            "environment": "f324d1ba-fbfa-4f39-9141-fcf40c692df1",
+            "service": "d600fe65-95b6-47f3-9ea3-3d80d2fa6fca",
+            "deployment": "762089ec-404b-4d36-83b4-7af9849361e5",
+            "replica": "3840a53a-f7b0-4be0-94cc-a30df47ca973"
+        },
+        "timestamp": "2025-11-14T14:51:31.393459268Z"
+    },
+    {
+        "message": "2025-11-14 14:51:26,033 - src.tools.clickup_tools - INFO - [\u001b[32m\u001b[1minfo     \u001b[0m] \u001b[1mGetting tasks by list ID      \u001b[0m \u001b[36mfunction\u001b[0m=\u001b[35mget_tasks_by_list_id\u001b[0m \u001b[36mparameters\u001b[0m=\u001b[35m{'list_id': '901507610592', 'filters': {'date_updated_gt': 1762527086033, 'include_closed': True, 'subtasks': True}}\u001b[0m",
+        "attributes": {
+            "level": "info"
+        },
+        "tags": {
+            "project": "c268f033-cf77-430c-9986-444c33ebcea3",
+            "environment": "f324d1ba-fbfa-4f39-9141-fcf40c692df1",
+            "service": "d600fe65-95b6-47f3-9ea3-3d80d2fa6fca",
+            "deployment": "762089ec-404b-4d36-83b4-7af9849361e5",
+            "replica": "3840a53a-f7b0-4be0-94cc-a30df47ca973"
+        },
+        "timestamp": "2025-11-14T14:51:31.393465264Z"
+    },
+    {
+        "message": "2025-11-14 14:51:26,622 - src.tools.clickup_tools - INFO - [\u001b[32m\u001b[1minfo     \u001b[0m] \u001b[1mSuccessfully retrieved tasks  \u001b[0m \u001b[36mlist_id\u001b[0m=\u001b[35m901507610592\u001b[0m \u001b[36mtask_count\u001b[0m=\u001b[35m11\u001b[0m",
+        "attributes": {
+            "level": "info"
+        },
+        "tags": {
+            "project": "c268f033-cf77-430c-9986-444c33ebcea3",
+            "environment": "f324d1ba-fbfa-4f39-9141-fcf40c692df1",
+            "service": "d600fe65-95b6-47f3-9ea3-3d80d2fa6fca",
+            "deployment": "762089ec-404b-4d36-83b4-7af9849361e5",
+            "replica": "3840a53a-f7b0-4be0-94cc-a30df47ca973"
+        },
+        "timestamp": "2025-11-14T14:51:32.347180922Z"
+    },
+    {
+        "message": "2025-11-14 14:51:26,622 - src.tools.clickup_tools - INFO - [\u001b[32m\u001b[1minfo     \u001b[0m] \u001b[1mSuccessfully retrieved updated tasks\u001b[0m \u001b[36mhours_ago\u001b[0m=\u001b[35m168\u001b[0m \u001b[36mlist_id\u001b[0m=\u001b[35m901507610592\u001b[0m \u001b[36mtask_count\u001b[0m=\u001b[35m11\u001b[0m",
+        "attributes": {
+            "level": "info"
+        },
+        "tags": {
+            "project": "c268f033-cf77-430c-9986-444c33ebcea3",
+            "environment": "f324d1ba-fbfa-4f39-9141-fcf40c692df1",
+            "service": "d600fe65-95b6-47f3-9ea3-3d80d2fa6fca",
+            "deployment": "762089ec-404b-4d36-83b4-7af9849361e5",
+            "replica": "3840a53a-f7b0-4be0-94cc-a30df47ca973"
+        },
+        "timestamp": "2025-11-14T14:51:32.347189700Z"
+    },
+    {
+        "message": "2025-11-14 14:51:50,955 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions \"HTTP/1.1 200 OK\"",
+        "attributes": {
+            "level": "info"
+        },
+        "tags": {
+            "project": "c268f033-cf77-430c-9986-444c33ebcea3",
+            "environment": "f324d1ba-fbfa-4f39-9141-fcf40c692df1",
+            "service": "d600fe65-95b6-47f3-9ea3-3d80d2fa6fca",
+            "deployment": "762089ec-404b-4d36-83b4-7af9849361e5",
+            "replica": "3840a53a-f7b0-4be0-94cc-a30df47ca973"
+        },
+        "timestamp": "2025-11-14T14:51:51.679718457Z"
+    },
+    {
+        "message": "2025-11-14 14:51:50,980 - src.llm_orchestrator - INFO - [\u001b[32m\u001b[1minfo     \u001b[0m] \u001b[1mGPT-4 API call completed      \u001b[0m \u001b[36mcompletion_tokens\u001b[0m=\u001b[35m411\u001b[0m \u001b[36mllm_interaction\u001b[0m=\u001b[35mTrue\u001b[0m \u001b[36mmodel\u001b[0m=\u001b[35mgpt-4-1106-preview\u001b[0m \u001b[36mprompt_tokens\u001b[0m=\u001b[35m26418\u001b[0m",
+        "attributes": {
+            "level": "info"
+        },
+        "tags": {
+            "project": "c268f033-cf77-430c-9986-444c33ebcea3",
+            "environment": "f324d1ba-fbfa-4f39-9141-fcf40c692df1",
+            "service": "d600fe65-95b6-47f3-9ea3-3d80d2fa6fca",
+            "deployment": "762089ec-404b-4d36-83b4-7af9849361e5",
+            "replica": "3840a53a-f7b0-4be0-94cc-a30df47ca973"
+        },
+        "timestamp": "2025-11-14T14:51:51.679727861Z"
+    },
+    {
+        "message": "2025-11-14 14:51:50,980 - src.llm_orchestrator - INFO - [\u001b[32m\u001b[1minfo     \u001b[0m] \u001b[1mSuccessfully processed user message\u001b[0m \u001b[36mresponse_length\u001b[0m=\u001b[35m2011\u001b[0m \u001b[36muser_id\u001b[0m=\u001b[35mU03EX6W085S\u001b[0m",
+        "attributes": {
+            "level": "info"
+        },
+        "tags": {
+            "project": "c268f033-cf77-430c-9986-444c33ebcea3",
+            "environment": "f324d1ba-fbfa-4f39-9141-fcf40c692df1",
+            "service": "d600fe65-95b6-47f3-9ea3-3d80d2fa6fca",
+            "deployment": "762089ec-404b-4d36-83b4-7af9849361e5",
+            "replica": "3840a53a-f7b0-4be0-94cc-a30df47ca973"
+        },
+        "timestamp": "2025-11-14T14:51:51.679736411Z"
+    },
+    {
+        "message": "2025-11-14 15:06:51,815 - src.slack_handler - INFO - [\u001b[32m\u001b[1minfo     \u001b[0m] \u001b[1mThread message received       \u001b[0m \u001b[36mchannel_id\u001b[0m=\u001b[35mC080XN9K407\u001b[0m \u001b[36mslack_event\u001b[0m=\u001b[35mthread_message\u001b[0m \u001b[36muser_id\u001b[0m=\u001b[35mU03EX6W085S\u001b[0m",
+        "attributes": {
+            "level": "info"
+        },
+        "tags": {
+            "project": "c268f033-cf77-430c-9986-444c33ebcea3",
+            "environment": "f324d1ba-fbfa-4f39-9141-fcf40c692df1",
+            "service": "d600fe65-95b6-47f3-9ea3-3d80d2fa6fca",
+            "deployment": "762089ec-404b-4d36-83b4-7af9849361e5",
+            "replica": "3840a53a-f7b0-4be0-94cc-a30df47ca973"
+        },
+        "timestamp": "2025-11-14T15:06:56.330664799Z"
+    },
+    {
+        "message": "2025-11-14 15:06:52,449 - src.llm_orchestrator - INFO - [\u001b[32m\u001b[1minfo     \u001b[0m] \u001b[1mProcessing user message       \u001b[0m \u001b[36mchannel_id\u001b[0m=\u001b[35mC080XN9K407\u001b[0m \u001b[36muser_id\u001b[0m=\u001b[35mU03EX6W085S\u001b[0m \u001b[36muser_message\u001b[0m=\u001b[35m\"<@U08MPRGSFLM> here..\\nHe didn't have the last message from the client, so that means that database i...\"\u001b[0m",
+        "attributes": {
+            "level": "info"
+        },
+        "tags": {
+            "project": "c268f033-cf77-430c-9986-444c33ebcea3",
+            "environment": "f324d1ba-fbfa-4f39-9141-fcf40c692df1",
+            "service": "d600fe65-95b6-47f3-9ea3-3d80d2fa6fca",
+            "deployment": "762089ec-404b-4d36-83b4-7af9849361e5",
+            "replica": "3840a53a-f7b0-4be0-94cc-a30df47ca973"
+        },
+        "timestamp": "2025-11-14T15:06:56.330677278Z"
+    },
+    {
+        "message": "2025-11-14 15:06:54,540 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions \"HTTP/1.1 200 OK\"",
+        "attributes": {
+            "level": "info"
+        },
+        "tags": {
+            "project": "c268f033-cf77-430c-9986-444c33ebcea3",
+            "environment": "f324d1ba-fbfa-4f39-9141-fcf40c692df1",
+            "service": "d600fe65-95b6-47f3-9ea3-3d80d2fa6fca",
+            "deployment": "762089ec-404b-4d36-83b4-7af9849361e5",
+            "replica": "3840a53a-f7b0-4be0-94cc-a30df47ca973"
+        },
+        "timestamp": "2025-11-14T15:06:56.330684518Z"
+    },
+    {
+        "message": "2025-11-14 15:06:54,545 - src.llm_orchestrator - INFO - [\u001b[32m\u001b[1minfo     \u001b[0m] \u001b[1mGPT-4 API call completed      \u001b[0m \u001b[36mcompletion_tokens\u001b[0m=\u001b[35m24\u001b[0m \u001b[36mllm_interaction\u001b[0m=\u001b[35mTrue\u001b[0m \u001b[36mmodel\u001b[0m=\u001b[35mgpt-4-1106-preview\u001b[0m \u001b[36mprompt_tokens\u001b[0m=\u001b[35m3080\u001b[0m",
+        "attributes": {
+            "level": "info"
+        },
+        "tags": {
+            "project": "c268f033-cf77-430c-9986-444c33ebcea3",
+            "environment": "f324d1ba-fbfa-4f39-9141-fcf40c692df1",
+            "service": "d600fe65-95b6-47f3-9ea3-3d80d2fa6fca",
+            "deployment": "762089ec-404b-4d36-83b4-7af9849361e5",
+            "replica": "3840a53a-f7b0-4be0-94cc-a30df47ca973"
+        },
+        "timestamp": "2025-11-14T15:06:56.330692064Z"
+    },
+    {
+        "message": "2025-11-14 15:06:54,545 - src.llm_orchestrator - INFO - [\u001b[32m\u001b[1minfo     \u001b[0m] \u001b[1mExecuting tool call           \u001b[0m \u001b[36marguments\u001b[0m=\u001b[35m{'channel_id': 'C080XN9K407'}\u001b[0m \u001b[36mtool_name\u001b[0m=\u001b[35mget_client_by_channel_id\u001b[0m",
+        "attributes": {
+            "level": "info"
+        },
+        "tags": {
+            "project": "c268f033-cf77-430c-9986-444c33ebcea3",
+            "environment": "f324d1ba-fbfa-4f39-9141-fcf40c692df1",
+            "service": "d600fe65-95b6-47f3-9ea3-3d80d2fa6fca",
+            "deployment": "762089ec-404b-4d36-83b4-7af9849361e5",
+            "replica": "3840a53a-f7b0-4be0-94cc-a30df47ca973"
+        },
+        "timestamp": "2025-11-14T15:06:56.330698376Z"
+    },
+    {
+        "message": "2025-11-14 15:06:54,546 - src.mcp_server - INFO - [\u001b[32m\u001b[1minfo     \u001b[0m] \u001b[1mMCP tool called               \u001b[0m \u001b[36marguments\u001b[0m=\u001b[35m{'channel_id': 'C080XN9K407'}\u001b[0m \u001b[36mmcp_tool\u001b[0m=\u001b[35mget_client_by_channel_id\u001b[0m \u001b[36mtype\u001b[0m=\u001b[35mtool_call\u001b[0m",
+        "attributes": {
+            "level": "info"
+        },
+        "tags": {
+            "project": "c268f033-cf77-430c-9986-444c33ebcea3",
+            "environment": "f324d1ba-fbfa-4f39-9141-fcf40c692df1",
+            "service": "d600fe65-95b6-47f3-9ea3-3d80d2fa6fca",
+            "deployment": "762089ec-404b-4d36-83b4-7af9849361e5",
+            "replica": "3840a53a-f7b0-4be0-94cc-a30df47ca973"
+        },
+        "timestamp": "2025-11-14T15:06:56.330704881Z"
+    },
+    {
+        "message": "2025-11-14 15:06:54,546 - src.tools.supabase_tools - INFO - [\u001b[32m\u001b[1minfo     \u001b[0m] \u001b[1mGetting client by channel ID  \u001b[0m \u001b[36mfunction\u001b[0m=\u001b[35mget_client_by_channel_id\u001b[0m \u001b[36mparameters\u001b[0m=\u001b[35m{'channel_id': 'C080XN9K407'}\u001b[0m",
+        "attributes": {
+            "level": "info"
+        },
+        "tags": {
+            "project": "c268f033-cf77-430c-9986-444c33ebcea3",
+            "environment": "f324d1ba-fbfa-4f39-9141-fcf40c692df1",
+            "service": "d600fe65-95b6-47f3-9ea3-3d80d2fa6fca",
+            "deployment": "762089ec-404b-4d36-83b4-7af9849361e5",
+            "replica": "3840a53a-f7b0-4be0-94cc-a30df47ca973"
+        },
+        "timestamp": "2025-11-14T15:06:56.330710833Z"
+    },
+    {
+        "message": "2025-11-14 15:06:55,084 - httpx - INFO - HTTP Request: GET https://naitzbqgkbufxmuoypaz.supabase.co/rest/v1/client_mappings?select=%2A&or=%28slack_internal_channel_id.eq.C080XN9K407%2Cslack_external_channel_id.eq.C080XN9K407%29 \"HTTP/2 200 OK\"",
+        "attributes": {
+            "level": "info"
+        },
+        "tags": {
+            "project": "c268f033-cf77-430c-9986-444c33ebcea3",
+            "environment": "f324d1ba-fbfa-4f39-9141-fcf40c692df1",
+            "service": "d600fe65-95b6-47f3-9ea3-3d80d2fa6fca",
+            "deployment": "762089ec-404b-4d36-83b4-7af9849361e5",
+            "replica": "3840a53a-f7b0-4be0-94cc-a30df47ca973"
+        },
+        "timestamp": "2025-11-14T15:06:56.330716457Z"
+    },
+    {
+        "message": "2025-11-14 15:06:55,087 - src.tools.supabase_tools - INFO - [\u001b[32m\u001b[1minfo     \u001b[0m] \u001b[1mSuccessfully found client by channel ID\u001b[0m \u001b[36mchannel_id\u001b[0m=\u001b[35mC080XN9K407\u001b[0m \u001b[36mclient_name\u001b[0m=\u001b[35mMonevate\u001b[0m",
+        "attributes": {
+            "level": "info"
+        },
+        "tags": {
+            "project": "c268f033-cf77-430c-9986-444c33ebcea3",
+            "environment": "f324d1ba-fbfa-4f39-9141-fcf40c692df1",
+            "service": "d600fe65-95b6-47f3-9ea3-3d80d2fa6fca",
+            "deployment": "762089ec-404b-4d36-83b4-7af9849361e5",
+            "replica": "3840a53a-f7b0-4be0-94cc-a30df47ca973"
+        },
+        "timestamp": "2025-11-14T15:06:56.334468402Z"
+    },
+    {
+        "message": "2025-11-14 15:07:00,096 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions \"HTTP/1.1 200 OK\"",
+        "attributes": {
+            "level": "info"
+        },
+        "tags": {
+            "project": "c268f033-cf77-430c-9986-444c33ebcea3",
+            "environment": "f324d1ba-fbfa-4f39-9141-fcf40c692df1",
+            "service": "d600fe65-95b6-47f3-9ea3-3d80d2fa6fca",
+            "deployment": "762089ec-404b-4d36-83b4-7af9849361e5",
+            "replica": "3840a53a-f7b0-4be0-94cc-a30df47ca973"
+        },
+        "timestamp": "2025-11-14T15:07:00.316959741Z"
+    },
+    {
+        "message": "2025-11-14 15:07:00,114 - src.llm_orchestrator - INFO - [\u001b[32m\u001b[1minfo     \u001b[0m] \u001b[1mGPT-4 API call completed      \u001b[0m \u001b[36mcompletion_tokens\u001b[0m=\u001b[35m146\u001b[0m \u001b[36mllm_interaction\u001b[0m=\u001b[35mTrue\u001b[0m \u001b[36mmodel\u001b[0m=\u001b[35mgpt-4-1106-preview\u001b[0m \u001b[36mprompt_tokens\u001b[0m=\u001b[35m3385\u001b[0m",
+        "attributes": {
+            "level": "info"
+        },
+        "tags": {
+            "project": "c268f033-cf77-430c-9986-444c33ebcea3",
+            "environment": "f324d1ba-fbfa-4f39-9141-fcf40c692df1",
+            "service": "d600fe65-95b6-47f3-9ea3-3d80d2fa6fca",
+            "deployment": "762089ec-404b-4d36-83b4-7af9849361e5",
+            "replica": "3840a53a-f7b0-4be0-94cc-a30df47ca973"
+        },
+        "timestamp": "2025-11-14T15:07:00.316971406Z"
+    },
+    {
+        "message": "2025-11-14 15:07:00,114 - src.llm_orchestrator - INFO - [\u001b[32m\u001b[1minfo     \u001b[0m] \u001b[1mSuccessfully processed user message\u001b[0m \u001b[36mresponse_length\u001b[0m=\u001b[35m705\u001b[0m \u001b[36muser_id\u001b[0m=\u001b[35mU03EX6W085S\u001b[0m",
+        "attributes": {
+            "level": "info"
+        },
+        "tags": {
+            "project": "c268f033-cf77-430c-9986-444c33ebcea3",
+            "environment": "f324d1ba-fbfa-4f39-9141-fcf40c692df1",
+            "service": "d600fe65-95b6-47f3-9ea3-3d80d2fa6fca",
+            "deployment": "762089ec-404b-4d36-83b4-7af9849361e5",
+            "replica": "3840a53a-f7b0-4be0-94cc-a30df47ca973"
+        },
+        "timestamp": "2025-11-14T15:07:00.316979805Z"
+    },
+    {
+        "message": "2025-11-14 15:37:12,913 - src.slack_handler - ERROR - [\u001b[31m\u001b[1merror    \u001b[0m] \u001b[1mGlobal Slack error            \u001b[0m \u001b[36mbody\u001b[0m=\u001b[35m{'token': 'y5vXhPU1HMstvvb0nintL5km', 'team_id': 'TJQ232WGP', 'context_team_id': 'TJQ232WGP', 'context_enterprise_id': None, 'api_app_id': 'A08RWMBCV8A', 'event': {'type': 'message', 'user': 'U04QJPRPUPL', 'ts': '1763134631.098959', 'client_msg_id': 'e6fce66b-703d-4799-8fde-753d16994a07', 'text': '*Kizen Weekly Update – November 14, 2025*\\n\\nHi team,\\n\\nHere’s a summary of this week’s progress:\\n\\n*Completed / Updates*\\n• *Homepage:* Completed the homepage design along with all associated graphics. Feedback has been reviewed and implemented.\\n• *Healthcare Page:* Finalized the visuals for the Healthcare page.\\n*Project Dashboard*\\nYou can view all current tasks, their statuses, and related  updates here: <https://sharing.clickup.com/2357720/l/h/27yer-17435/baa8aa0c45cea7b|View Dashboard>\\n\\n*Time Report (November)*\\n• Design: 50 hr 30 min\\nThank you for the continued collaboration. Wishing you a great weekend ahead.\\n\\n cc. <@U08QD4CEH4J> <@U04LRJ2UM8D>', 'team': 'TJQ232WGP', 'thread_ts': '1763132431.052399', 'parent_user_id': 'U04LRJ2UM8D', 'blocks': [{'type': 'rich_text', 'block_id': 'D8xvx', 'elements': [{'type': 'rich_text_section', 'elements': [{'type': 'text', 'text': 'Kizen Weekly Update – November 14, 2025', 'style': {'bold': True}}, {'type': 'text', 'text': '\\n\\nHi team,\\n\\nHere’s a summary of this week’s progress:\\n\\n'}, {'type': 'text', 'text': 'Completed / Updates', 'style': {'bold': True}}, {'type': 'text', 'text': '\\n'}]}, {'type': 'rich_text_list', 'elements': [{'type': 'rich_text_section', 'elements': [{'type': 'text', 'text': 'Homepage:', 'style': {'bold': True}}, {'type': 'text', 'text': ' Completed the homepage design along with all associated graphics. Feedback has been reviewed and implemented.'}]}, {'type': 'rich_text_section', 'elements': [{'type': 'text', 'text': 'Healthcare Page:', 'style': {'bold': True}}, {'type': 'text', 'text': ' Finalized the visuals for the Healthcare page.'}]}], 'style': 'bullet', 'indent': 0, 'border': 0}, {'type': 'rich_text_section', 'elements': [{'type': 'text', 'text': '\\n'}, {'type': 'text', 'text': 'Project Dashboard', 'style': {'bold': True}}, {'type': 'text', 'text': '\\nYou can view all current tasks, their statuses, and related  updates here: '}, {'type': 'link', 'url': 'https://sharing.clickup.com/2357720/l/h/27yer-17435/baa8aa0c45cea7b', 'text': 'View Dashboard'}, {'type': 'text', 'text': '\\n\\n'}, {'type': 'text', 'text': 'Time Report (November)', 'style': {'bold': True}}, {'type': 'text', 'text': '\\n'}]}, {'type': 'rich_text_list', 'elements': [{'type': 'rich_text_section', 'elements': [{'type': 'text', 'text': 'Design: 50 hr 30 min'}]}], 'style': 'bullet', 'indent': 0, 'border': 0}, {'type': 'rich_text_section', 'elements': [{'type': 'text', 'text': '\\nThank you for the continued collaboration. Wishing you a great weekend ahead.\\n\\n cc. '}, {'type': 'user', 'user_id': 'U08QD4CEH4J'}, {'type': 'text', 'text': ' '}, {'type': 'user', 'user_id': 'U04LRJ2UM8D'}]}]}], 'channel': 'C07DTJ7BXSB', 'event_ts': '1763134631.098959', 'channel_type': 'group'}, 'type': 'event_callback', 'event_id': 'Ev09TU6VKBR6', 'event_time': 1763134631, 'authorizations': [{'enterprise_id': None, 'team_id': 'TJQ232WGP', 'user_id': 'U08MPRGSFLM', 'is_bot': False, 'is_enterprise_install': False}], 'is_ext_shared_channel': False, 'event_context': '4-eyJldCI6Im1lc3NhZ2UiLCJ0aWQiOiJUSlEyMzJXR1AiLCJhaWQiOiJBMDhSV01CQ1Y4QSIsImNpZCI6IkMwN0RUSjdCWFNCIn0'}\u001b[0m \u001b[36merror\u001b[0m=\u001b[35m\"BoundLogger.error() got multiple values for argument 'event'\"\u001b[0m",
+        "attributes": {
+            "level": "info"
+        },
+        "tags": {
+            "project": "c268f033-cf77-430c-9986-444c33ebcea3",
+            "environment": "f324d1ba-fbfa-4f39-9141-fcf40c692df1",
+            "service": "d600fe65-95b6-47f3-9ea3-3d80d2fa6fca",
+            "deployment": "762089ec-404b-4d36-83b4-7af9849361e5",
+            "replica": "3840a53a-f7b0-4be0-94cc-a30df47ca973"
+        },
+        "timestamp": "2025-11-14T15:37:14.793443764Z"
+    }
+]2025-11-14 15:57:17,543 - src.slack_handler - ERROR - [[31m[1merror    [0m] [1mGlobal Slack error            [0m [36mbody[0m=[35m{'token': 'y5vXhPU1HMstvvb0nintL5km', 'team_id': 'TJQ232WGP', 'context_team_id': 'TJQ232WGP', 'context_enterprise_id': None, 'api_app_id': 'A08RWMBCV8A', 'event': {'type': 'message', 'user': 'U04LRJ2UM8D', 'ts': '1763135835.910479', 'client_msg_id': 'bbf97903-1365-49b5-8073-3e66bfda07c3', 'text': 'good', 'team': 'TJQ232WGP', 'thread_ts': '1763132431.052399', 'parent_user_id': 'U04LRJ2UM8D', 'blocks': [{'type': 'rich_text', 'block_id': '6Qedq', 'elements': [{'type': 'rich_text_section', 'elements': [{'type': 'text', 'text': 'good'}]}]}], 'channel': 'C07DTJ7BXSB', 'event_ts': '1763135835.910479', 'channel_type': 'group'}, 'type': 'event_callback', 'event_id': 'Ev09SJJJLCNT', 'event_time': 1763135835, 'authorizations': [{'enterprise_id': None, 'team_id': 'TJQ232WGP', 'user_id': 'U08MPRGSFLM', 'is_bot': False, 'is_enterprise_install': False}], 'is_ext_shared_channel': False, 'event_context': '4-eyJldCI6Im1lc3NhZ2UiLCJ0aWQiOiJUSlEyMzJXR1AiLCJhaWQiOiJBMDhSV01CQ1Y4QSIsImNpZCI6IkMwN0RUSjdCWFNCIn0'}[0m [36merror[0m=[35m"BoundLogger.error() got multiple values for argument 'event'"[0m

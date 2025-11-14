@@ -32,6 +32,12 @@ from .tools import (
     get_tasks_with_time_spent,
     create_time_entry,
     get_task_time_tracking,
+    
+    # Slack message tools
+    get_recent_messages_by_channel,
+    get_latest_client_message,
+    search_messages_by_text,
+    get_conversation_context,
 )
 
 from .utils import get_logger, log_mcp_tool_call
@@ -307,6 +313,62 @@ class SlackBotMCPServer:
             logger.info("MCP tool called", **log_mcp_tool_call("get_task_time_tracking", {"task_id": task_id}))
             return await get_task_time_tracking(task_id)
         
+        # Slack Message Tools
+        async def get_recent_messages_by_channel_tool(
+            channel_id: str,
+            limit: int = 10,
+            hours_ago: Optional[int] = None
+        ) -> List[Dict[str, Any]]:
+            """
+            Get recent messages from a specific Slack channel.
+            
+            This tool retrieves recent messages from the slack-channels-messages table
+            in Supabase. Use this to see what clients have been saying in their channels.
+            Perfect for understanding recent client communication and context.
+            """
+            logger.info("MCP tool called", **log_mcp_tool_call("get_recent_messages_by_channel", {"channel_id": channel_id, "limit": limit, "hours_ago": hours_ago}))
+            return await get_recent_messages_by_channel(channel_id, limit, hours_ago)
+        
+        async def get_latest_client_message_tool(channel_id: str) -> Dict[str, Any]:
+            """
+            Get the most recent message from a client in a specific channel.
+            
+            This tool filters out bot messages and returns only the latest user message.
+            CRITICAL: Use this when users ask "what's the last client message" or 
+            "what did the client say" - this is the tool that answers that question!
+            """
+            logger.info("MCP tool called", **log_mcp_tool_call("get_latest_client_message", {"channel_id": channel_id}))
+            return await get_latest_client_message(channel_id)
+        
+        async def search_messages_by_text_tool(
+            channel_id: str,
+            search_text: str,
+            limit: int = 10
+        ) -> List[Dict[str, Any]]:
+            """
+            Search for messages containing specific text in a channel.
+            
+            This tool searches through message history to find specific topics or keywords.
+            Use this when users want to find messages about a specific topic or feature.
+            """
+            logger.info("MCP tool called", **log_mcp_tool_call("search_messages_by_text", {"channel_id": channel_id, "search_text": search_text, "limit": limit}))
+            return await search_messages_by_text(channel_id, search_text, limit)
+        
+        async def get_conversation_context_tool(
+            channel_id: str,
+            hours_ago: int = 24,
+            limit: int = 20
+        ) -> Dict[str, Any]:
+            """
+            Get conversation context and statistics from a channel.
+            
+            This tool provides a comprehensive view of recent channel activity including
+            message counts, latest client messages, and conversation summary. Use this
+            to understand the overall communication pattern with a client.
+            """
+            logger.info("MCP tool called", **log_mcp_tool_call("get_conversation_context", {"channel_id": channel_id, "hours_ago": hours_ago, "limit": limit}))
+            return await get_conversation_context(channel_id, hours_ago, limit)
+        
         # Register all tools
         self.tools = [
             ToolDefinition("get_client_mapping", get_client_mapping_tool, get_client_mapping_tool.__doc__),
@@ -326,6 +388,10 @@ class SlackBotMCPServer:
             ToolDefinition("get_tasks_with_time_spent", get_tasks_with_time_spent_tool, get_tasks_with_time_spent_tool.__doc__),
             ToolDefinition("create_time_entry", create_time_entry_tool, create_time_entry_tool.__doc__),
             ToolDefinition("get_task_time_tracking", get_task_time_tracking_tool, get_task_time_tracking_tool.__doc__),
+            ToolDefinition("get_recent_messages_by_channel", get_recent_messages_by_channel_tool, get_recent_messages_by_channel_tool.__doc__),
+            ToolDefinition("get_latest_client_message", get_latest_client_message_tool, get_latest_client_message_tool.__doc__),
+            ToolDefinition("search_messages_by_text", search_messages_by_text_tool, search_messages_by_text_tool.__doc__),
+            ToolDefinition("get_conversation_context", get_conversation_context_tool, get_conversation_context_tool.__doc__),
         ]
         
         logger.info("All MCP tools registered successfully", tool_count=len(self.tools))
