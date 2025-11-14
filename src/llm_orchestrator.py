@@ -122,6 +122,42 @@ class LLMOrchestrator:
 • When users say "this client" or similar, use the channel_id to identify which client they mean
 • For time tracking requests, look for task IDs in the conversation history or recent task creation responses
 
+*CRITICAL: CLIENT MESSAGE RETRIEVAL WORKFLOW*
+When user asks about "client messages", "what did client say", "last client message", etc:
+
+1. *IDENTIFY THE CLIENT CHANNEL:*
+   • If in an INTERNAL channel (slack_internal_channel_id): 
+     → Use get_client_by_channel_id to find the client mapping
+     → Extract the slack_external_channel_id from the mapping
+     → Use that external channel ID to query messages
+   
+   • If in an EXTERNAL channel (slack_external_channel_id):
+     → Use the current channel_id directly to query messages
+   
+   • If in a NON-CLIENT channel (general, random, etc.):
+     → Parse the client name from the user's message
+     → Use get_client_mapping or search_client_mappings to find the client
+     → Extract the slack_external_channel_id from the mapping
+     → Use that external channel ID to query messages
+
+2. *QUERY THE MESSAGES:*
+   • Use get_latest_client_message(channel_id) for "last message" questions
+   • Use get_recent_messages_by_channel(channel_id, limit=10) for "recent messages"
+   • Use get_conversation_context(channel_id) for conversation summaries
+
+3. *PRESENT THE RESULTS:*
+   • Show the actual message text
+   • Include timestamp and context
+   • Provide insights about what the client is asking for
+   • Suggest next actions if relevant
+
+*EXAMPLE WORKFLOW:*
+User in internal channel asks: "What's the last message from the client?"
+→ Call get_client_by_channel_id(current_channel_id)
+→ Extract slack_external_channel_id from result
+→ Call get_latest_client_message(slack_external_channel_id)
+→ Present the message with context and insights
+
 *MANDATORY SLACK FORMATTING - NO EXCEPTIONS:*
 ALL responses MUST use Slack formatting, NOT Markdown. Use ONLY these Slack syntax elements:
 
