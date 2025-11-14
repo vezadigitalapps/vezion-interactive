@@ -333,8 +333,11 @@ class SlackBotMCPServer:
             """
             Get the most recent message from a client in a specific channel.
             
-            This tool filters out bot messages and returns only the latest user message.
-            CRITICAL: Use this when users ask "what's the last client message" or 
+            CRITICAL FILTERING: This tool returns ONLY client messages (external users).
+            - Clients have user_id but user_name = NULL (external Slack Connect users)
+            - Employees have both user_id AND user_name populated
+            
+            Use this when users ask "what's the last client message" or 
             "what did the client say" - this is the tool that answers that question!
             """
             logger.info("MCP tool called", **log_mcp_tool_call("get_latest_client_message", {"channel_id": channel_id}))

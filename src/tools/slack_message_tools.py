@@ -75,7 +75,9 @@ class SlackMessageTools:
         """
         Get the most recent message from a client in a specific channel.
         
-        This filters out bot messages and returns only user messages.
+        CRITICAL: Clients are external users with user_id but user_name = NULL
+        Employees have both user_id AND user_name populated.
+        This filters to show only client messages (user_name IS NULL).
         
         Args:
             channel_id: The Slack channel ID
@@ -87,11 +89,12 @@ class SlackMessageTools:
                    **log_function_call("get_latest_client_message", channel_id=channel_id))
         
         try:
-            # Get recent messages, excluding bot messages
+            # Get recent messages from CLIENTS ONLY (user_name is NULL for external users)
+            # Clients have user_id but no user_name because they're external connections
             response = self.client.table("slack-channels-messages")\
                 .select("*")\
                 .eq("channel_id", channel_id)\
-                .neq("user_name", "VEZION")\
+                .is_("user_name", "null")\
                 .not_.is_("message_text", "null")\
                 .order("timestamp", desc=True)\
                 .limit(1)\
@@ -101,7 +104,8 @@ class SlackMessageTools:
                 message = response.data[0]
                 logger.info("Successfully retrieved latest client message", 
                            channel_id=channel_id,
-                           timestamp=message.get("timestamp"))
+                           timestamp=message.get("timestamp"),
+                           has_user_id=bool(message.get("user_id")))
                 return message
             else:
                 logger.warning("No client messages found", channel_id=channel_id)
@@ -169,6 +173,8 @@ class SlackMessageTools:
         """
         Get conversation context from a channel including message statistics.
         
+        Properly separates client messages (user_name IS NULL) from employee messages.
+        
         Args:
             channel_id: The Slack channel ID
             hours_ago: Look back this many hours
@@ -189,23 +195,32 @@ class SlackMessageTools:
                 hours_ago=hours_ago
             )
             
-            # Analyze messages
-            client_messages = [m for m in messages if m.get("user_name") != "VEZION" and m.get("message_text")]
+            # Analyze messages - CRITICAL: Clients have user_name = NULL
+            # Clients: user_id exists but user_name is NULL (external users)
+            # Employees: both user_id and user_name exist
+            client_messages = [m for m in messages if m.get("user_name") is None and m.get("message_text")]
+            employee_messages = [m for m in messages if m.get("user_name") is not None and m.get("user_name") != "VEZION" and m.get("message_text")]
             bot_messages = [m for m in messages if m.get("user_name") == "VEZION"]
             
             context = {
                 "channel_id": channel_id,
                 "total_messages": len(messages),
                 "client_messages_count": len(client_messages),
+                "employee_messages_count": len(employee_messages),
                 "bot_messages_count": len(bot_messages),
                 "latest_client_message": client_messages[0] if client_messages else None,
-                "recent_messages": messages[:10],  # Last 10 messages
+                "latest_employee_message": employee_messages[0] if employee_messages else None,
+                "recent_client_messages": client_messages[:5],  # Last 5 client messages
+                "recent_employee_messages": employee_messages[:5],  # Last 5 employee messages
+                "recent_messages": messages[:10],  # Last 10 messages overall
                 "time_range_hours": hours_ago
             }
             
             logger.info("Successfully built conversation context",
                        channel_id=channel_id,
-                       total_messages=len(messages))
+                       total_messages=len(messages),
+                       client_count=len(client_messages),
+                       employee_count=len(employee_messages))
             
             return context
             
